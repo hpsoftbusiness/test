@@ -10,3 +10,9 @@ detail:
 mailConfirmationWorker:
     path: /mail-confirmation-worker
     controller: App\Controller\MailController::mailConfirmationWorker
+trial:
+    path: /trial
+    controller: App\Controller\EmployerController::trial
+mailConfirmationEmployer:
+    path: /mail-confirmation-employer
+    controller: App\Controller\MailController::mailConfirmationEmployer

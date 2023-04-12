@@ -205,7 +205,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"cd-full-width\">
                         <h2>Rozwiąż NATYCHMIAST swój problem IT. My znajdziemy ludzi i sposób.</h2>
                         <h3>poraz pierwszy całkowicie po polsku i wspierając Polske. </h3>
-                        <a href=\"/\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
+                        <a href=\"/trial\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
                         <a href=\"/post-job\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
                     </div> <!-- .cd-full-width -->
                 </li>
@@ -777,7 +777,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                             <li>szybka realizacja</li>
                             <li>wsparcie 12/7</li>
                         </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">Wybróbuj za darmo</a>
+                        <a class=\"btn btn-primary\" href=\"/trial\">Wybróbuj za darmo</a>
                     </div>
                 </div><!-- plan end -->
 
@@ -1313,7 +1313,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"cd-full-width\">
                         <h2>Rozwiąż NATYCHMIAST swój problem IT. My znajdziemy ludzi i sposób.</h2>
                         <h3>poraz pierwszy całkowicie po polsku i wspierając Polske. </h3>
-                        <a href=\"/\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
+                        <a href=\"/trial\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
                         <a href=\"/post-job\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
                     </div> <!-- .cd-full-width -->
                 </li>
@@ -1864,7 +1864,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                             <li>szybka realizacja</li>
                             <li>wsparcie 12/7</li>
                         </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">Wybróbuj za darmo</a>
+                        <a class=\"btn btn-primary\" href=\"/trial\">Wybróbuj za darmo</a>
                     </div>
                 </div><!-- plan end -->
 

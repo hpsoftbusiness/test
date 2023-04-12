@@ -2,6 +2,7 @@
 
 namespace App\Repository;
 
+use App\Entity\JobDetail;
 use App\Entity\JobPost;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\Tools\Pagination\Paginator;
@@ -100,5 +101,45 @@ class JobPostRepository extends ServiceEntityRepository
     public function getPost($id)
     {
         return $this->getEntityManager()->getRepository(JobPost::class)->findOneBy(['id' => $id]);
+    }
+
+
+    /**
+     * @param string $category
+     * @param string $technology
+     * @param string $price
+     * @param string $description
+     * @param string $name
+     * @param string $email
+     * @param string $phone
+     * @param string $scope
+     *
+     * @return int|null
+     */
+    public function saveJobPost(string $category, string $technology, string $price, string $description, string $name, string $email, string $phone, string $scope, string $skills)
+    {
+        $jobPost = new JobPost();
+        $jobPost->setTechnology($technology);
+        $jobPost->setCategory($category);
+        $jobPost->setPrice((int)$price);
+        $jobPost->setScope($scope);
+        $jobPost->setSkills($skills);
+        $jobPost->setExecutionTime(10);
+
+        $this->getEntityManager()->persist($jobPost);
+        $this->getEntityManager()->flush();
+
+        $found = $this->getEntityManager()->getRepository(JobPost::class)->findOneBy(['scope' => $scope]);
+        $id = $found->getId();
+
+        $jobDetail = new JobDetail();
+        $jobDetail->setDescription($description);
+        $jobDetail->setJobPostId($id);
+        $jobDetail->setDifficulty(2);
+
+        $this->getEntityManager()->persist($jobDetail);
+        $this->getEntityManager()->flush();
+
+        return $id;
     }
 }

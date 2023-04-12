@@ -19,4 +19,6 @@ return [
     'postJob' => [[], ['_controller' => 'App\\Controller\\PostJobController::postJob'], [], [['text', '/post-job']], [], [], []],
     'detail' => [[], ['_controller' => 'App\\Controller\\ExpertController::detail'], [], [['text', '/detail']], [], [], []],
     'mailConfirmationWorker' => [[], ['_controller' => 'App\\Controller\\MailController::mailConfirmationWorker'], [], [['text', '/mail-confirmation-worker']], [], [], []],
+    'trial' => [[], ['_controller' => 'App\\Controller\\EmployerController::trial'], [], [['text', '/trial']], [], [], []],
+    'mailConfirmationEmployer' => [[], ['_controller' => 'App\\Controller\\MailController::mailConfirmationEmployer'], [], [['text', '/mail-confirmation-employer']], [], [], []],
 ];
