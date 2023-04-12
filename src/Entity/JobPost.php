@@ -28,22 +28,6 @@ class JobPost
     private $technology;
 
     /**
-     * @return mixed
-     */
-    public function getTechnology()
-    {
-        return $this->technology;
-    }
-
-    /**
-     * @param mixed $technology
-     */
-    public function setTechnology($technology): void
-    {
-        $this->technology = $technology;
-    }
-
-    /**
      * @ORM\Column(type="integer")
      */
     private $executionTime;
@@ -63,68 +47,118 @@ class JobPost
      */
     private $skills;
 
-    public function getId(): ?int
+    /**
+     * @return mixed
+     */
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getCategory(): ?string
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCategory()
     {
         return $this->category;
     }
 
-    public function setCategory(string $category): self
+    /**
+     * @param mixed $category
+     */
+    public function setCategory($category): void
     {
         $this->category = $category;
-
-        return $this;
     }
 
-    public function getExecutionTime(): ?int
+    /**
+     * @return mixed
+     */
+    public function getTechnology()
+    {
+        return $this->technology;
+    }
+
+    /**
+     * @param mixed $technology
+     */
+    public function setTechnology($technology): void
+    {
+        $this->technology = $technology;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getExecutionTime()
     {
         return $this->executionTime;
     }
 
-    public function setExecutionTime(int $executionTime): self
+    /**
+     * @param mixed $executionTime
+     */
+    public function setExecutionTime($executionTime): void
     {
         $this->executionTime = $executionTime;
-
-        return $this;
     }
 
-    public function getPrice(): ?int
+    /**
+     * @return mixed
+     */
+    public function getPrice()
     {
         return $this->price;
     }
 
-    public function setPrice(int $price): self
+    /**
+     * @param mixed $price
+     */
+    public function setPrice($price): void
     {
         $this->price = $price;
-
-        return $this;
     }
 
-    public function getScope(): ?string
+    /**
+     * @return mixed
+     */
+    public function getScope()
     {
         return $this->scope;
     }
 
-    public function setScope(string $scope): self
+    /**
+     * @param mixed $scope
+     */
+    public function setScope($scope): void
     {
         $this->scope = $scope;
-
-        return $this;
     }
 
-    public function getSkills(): ?string
+    /**
+     * @return mixed
+     */
+    public function getSkills()
     {
         return $this->skills;
     }
 
-    public function setSkills(string $skills): self
+    /**
+     * @param mixed $skills
+     */
+    public function setSkills($skills): void
     {
         $this->skills = $skills;
-
-        return $this;
     }
+
+
+
 }

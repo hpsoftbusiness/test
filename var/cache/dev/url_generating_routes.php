@@ -17,4 +17,6 @@ return [
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], [], []],
     'index' => [[], ['_controller' => 'App\\Controller\\IndexController::index'], [], [['text', '/index']], [], [], []],
     'postJob' => [[], ['_controller' => 'App\\Controller\\PostJobController::postJob'], [], [['text', '/post-job']], [], [], []],
+    'detail' => [[], ['_controller' => 'App\\Controller\\ExpertController::detail'], [], [['text', '/detail']], [], [], []],
+    'mailConfirmationWorker' => [[], ['_controller' => 'App\\Controller\\MailController::mailConfirmationWorker'], [], [['text', '/mail-confirmation-worker']], [], [], []],
 ];

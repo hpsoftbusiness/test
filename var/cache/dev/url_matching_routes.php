@@ -15,6 +15,8 @@ return [
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
         '/index' => [[['_route' => 'index', '_controller' => 'App\\Controller\\IndexController::index'], null, null, null, false, false, null]],
         '/post-job' => [[['_route' => 'postJob', '_controller' => 'App\\Controller\\PostJobController::postJob'], null, null, null, false, false, null]],
+        '/detail' => [[['_route' => 'detail', '_controller' => 'App\\Controller\\ExpertController::detail'], null, null, null, false, false, null]],
+        '/mail-confirmation-worker' => [[['_route' => 'mailConfirmationWorker', '_controller' => 'App\\Controller\\MailController::mailConfirmationWorker'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

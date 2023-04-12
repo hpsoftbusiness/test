@@ -4,3 +4,9 @@ index:
 postJob:
     path: /post-job
     controller: App\Controller\PostJobController::postJob
+detail:
+    path: /detail
+    controller: App\Controller\ExpertController::detail
+mailConfirmationWorker:
+    path: /mail-confirmation-worker
+    controller: App\Controller\MailController::mailConfirmationWorker

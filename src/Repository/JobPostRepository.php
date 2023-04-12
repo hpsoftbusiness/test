@@ -96,4 +96,9 @@ class JobPostRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+
+    public function getPost($id)
+    {
+        return $this->getEntityManager()->getRepository(JobPost::class)->findOneBy(['id' => $id]);
+    }
 }
