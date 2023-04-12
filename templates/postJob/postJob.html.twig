@@ -283,24 +283,24 @@
                         <td>{{ post.scope }}</td>
                         <td>Warsaw</td>
                         <td>
-                            <a href="/detail?id={{ post.id }}"><button class="btn btn-info">see details</button><a>
+                            <a href="/detail?id={{ post.id }}"><button class="btn btn-danger">see details</button><a>
                         </td>
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
             <nav aria-label="Page navigation example">
-                <a href="/"><button class="btn btn-info">Back</button></a>
+                <a href="/"><button class="btn btn-danger">Back</button></a>
                 <ul class="pagination" style="float: right;">
                     <form action="/post-job" method="POST">
                         <input type="hidden" name="search" value="{{ search }}">
                         {% set counter = 1 %}
-                        <a href="#" type="submit"><button class="btn btn-info" name="page" value="{{ counter }}" type="submit">Previous</button></a>
+                        <a href="#" type="submit"><button class="btn btn-danger" name="page" value="{{ counter }}" type="submit">Previous</button></a>
                         {% for p in counter..page %}
                             <a href="#" type="submit"><button class="btn btn-light" name="page" value="{{ counter }}" type="submit">{{ counter }}</button></a>
                             {% set counter = counter + 1 %}
                         {% endfor %}
-                        <a href="#" type="submit"><button class="btn btn-info" name="page" value="{{ page }}" type="submit">Next</button></a>
+                        <a href="#" type="submit"><button class="btn btn-danger" name="page" value="{{ page }}" type="submit">Next</button></a>
                     </form>
                 </ul>
             </nav>

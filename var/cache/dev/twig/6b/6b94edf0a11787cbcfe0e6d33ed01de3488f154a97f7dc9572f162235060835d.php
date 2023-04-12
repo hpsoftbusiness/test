@@ -381,7 +381,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
                             <a href=\"/detail?id=";
             // line 286
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "id", [], "any", false, false, false, 286), "html", null, true);
-            echo "\"><button class=\"btn btn-info\">see details</button><a>
+            echo "\"><button class=\"btn btn-danger\">see details</button><a>
                         </td>
                     </tr>
                 ";
@@ -393,7 +393,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
         echo "                </tbody>
             </table>
             <nav aria-label=\"Page navigation example\">
-                <a href=\"/\"><button class=\"btn btn-info\">Back</button></a>
+                <a href=\"/\"><button class=\"btn btn-danger\">Back</button></a>
                 <ul class=\"pagination\" style=\"float: right;\">
                     <form action=\"/post-job\" method=\"POST\">
                         <input type=\"hidden\" name=\"search\" value=\"";
@@ -404,7 +404,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
         // line 297
         $context["counter"] = 1;
         // line 298
-        echo "                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-info\" name=\"page\" value=\"";
+        echo "                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"";
         echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 298, $this->source); })()), "html", null, true);
         echo "\" type=\"submit\">Previous</button></a>
                         ";
@@ -428,7 +428,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 303
-        echo "                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-info\" name=\"page\" value=\"";
+        echo "                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"";
         echo twig_escape_filter($this->env, (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new RuntimeError('Variable "page" does not exist.', 303, $this->source); })()), "html", null, true);
         echo "\" type=\"submit\">Next</button></a>
                     </form>
@@ -1545,24 +1545,24 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
                         <td>{{ post.scope }}</td>
                         <td>Warsaw</td>
                         <td>
-                            <a href=\"/detail?id={{ post.id }}\"><button class=\"btn btn-info\">see details</button><a>
+                            <a href=\"/detail?id={{ post.id }}\"><button class=\"btn btn-danger\">see details</button><a>
                         </td>
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
             <nav aria-label=\"Page navigation example\">
-                <a href=\"/\"><button class=\"btn btn-info\">Back</button></a>
+                <a href=\"/\"><button class=\"btn btn-danger\">Back</button></a>
                 <ul class=\"pagination\" style=\"float: right;\">
                     <form action=\"/post-job\" method=\"POST\">
                         <input type=\"hidden\" name=\"search\" value=\"{{ search }}\">
                         {% set counter = 1 %}
-                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-info\" name=\"page\" value=\"{{ counter }}\" type=\"submit\">Previous</button></a>
+                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"{{ counter }}\" type=\"submit\">Previous</button></a>
                         {% for p in counter..page %}
                             <a href=\"#\" type=\"submit\"><button class=\"btn btn-light\" name=\"page\" value=\"{{ counter }}\" type=\"submit\">{{ counter }}</button></a>
                             {% set counter = counter + 1 %}
                         {% endfor %}
-                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-info\" name=\"page\" value=\"{{ page }}\" type=\"submit\">Next</button></a>
+                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"{{ page }}\" type=\"submit\">Next</button></a>
                     </form>
                 </ul>
             </nav>

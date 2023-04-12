@@ -205,8 +205,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"cd-full-width\">
                         <h2>Rozwiąż NATYCHMIAST swój problem IT. My znajdziemy ludzi i sposób.</h2>
                         <h3>poraz pierwszy całkowicie po polsku i wspierając Polske. </h3>
-                        <a href=\"/post-job\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
-                        <a href=\"#0\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
+                        <a href=\"/\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
+                        <a href=\"/post-job\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
                     </div> <!-- .cd-full-width -->
                 </li>
                 <li>
@@ -1313,8 +1313,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"cd-full-width\">
                         <h2>Rozwiąż NATYCHMIAST swój problem IT. My znajdziemy ludzi i sposób.</h2>
                         <h3>poraz pierwszy całkowicie po polsku i wspierając Polske. </h3>
-                        <a href=\"/post-job\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
-                        <a href=\"#0\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
+                        <a href=\"/\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
+                        <a href=\"/post-job\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
                     </div> <!-- .cd-full-width -->
                 </li>
                 <li>

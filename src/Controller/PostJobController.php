@@ -9,7 +9,12 @@ use Symfony\Component\HttpFoundation\Response;
 
 class PostJobController extends AbstractController
 {
-
+    /**
+     * @param Request $request
+     * @param JobPostRepository $jobPostRepository
+     *
+     * @return Response
+     */
     public function  postJob(Request $request, JobPostRepository $jobPostRepository): Response
     {
         $page = $request->get('page') ?? 1;
@@ -22,7 +27,6 @@ class PostJobController extends AbstractController
            $post = $pagination->getPost();
            $page = $pagination->getPage();
         }
-
 
         return $this->render('postJob/postJob.html.twig', ['posts' => $post, 'search' => $search, 'page' => $page]);
     }
