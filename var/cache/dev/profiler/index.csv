@@ -191,3 +191,5 @@ c858c6,127.0.0.1,GET,http://127.0.0.1:8002/img/favicon/favicon-144x144.png,16812
 6ace91,127.0.0.1,GET,http://127.0.0.1:8002/img/favicon/favicon-144x144.png,1681299270,,404
 0d9bd4,127.0.0.1,GET,http://127.0.0.1:8002/img/favicon/favicon-32x32.png,1681299270,16d82d,404
 16d82d,127.0.0.1,GET,http://127.0.0.1:8002/img/favicon/favicon-32x32.png,1681299270,,404
+2bea5f,127.0.0.1,GET,http://127.0.0.1:8001/img/favicon/favicon-32x32.png,1681303222,1c3dd9,404
+1c3dd9,127.0.0.1,GET,http://127.0.0.1:8001/img/favicon/favicon-32x32.png,1681303222,,404
