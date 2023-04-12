@@ -1,3 +1,6 @@
 index:
     path: /index
     controller: App\Controller\IndexController::index
+postJob:
+    path: /post-job
+    controller: App\Controller\PostJobController::postJob
