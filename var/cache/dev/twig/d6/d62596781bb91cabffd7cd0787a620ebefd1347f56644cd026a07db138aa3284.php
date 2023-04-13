@@ -139,57 +139,6 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         </a>
                     </div>
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-";
-        // line 148
-        echo "                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-";
-        // line 166
-        echo "                        <li><a href=\"/contact.html\">Kontakt</a></li>
-                    </ul>
-                </nav><!--/ Navigation end -->
             </div><!--/ Row end -->
         </div><!--/ Container end -->
     </header><!--/ Header end -->
@@ -203,8 +152,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <img class=\"\" src=\"/images/slider/bg1.jpg\" alt=\"slider\">
                     </div>
                     <div class=\"cd-full-width\">
-                        <h2>Rozwiąż NATYCHMIAST swój problem IT. My znajdziemy ludzi i sposób.</h2>
-                        <h3>poraz pierwszy całkowicie po polsku i wspierając Polske. </h3>
+                        <h2>Rozwiąż NATYCHMIAST swój problem IT</h2>
                         <a href=\"/trial\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
                         <a href=\"/post-job\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
                     </div> <!-- .cd-full-width -->
@@ -273,7 +221,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
             <div class=\"row\">
                 <div class=\"col-md-12 heading\">
                     <span class=\"title-icon pull-left\"><i class=\"fa fa-cogs\"></i></span>
-                    <h2 class=\"title\">Czym się zajmujemy <span class=\"title-desc\">Możemy Ci pomóc miedzy innymi w:</span></h2>
+                    <h2 class=\"title\">Specjalizujemy się w:</h2>
                 </div>
             </div><!-- Title row end -->
 
@@ -282,32 +230,32 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".5s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-tachometer\"></i></span>
-                            <h3>Design</h3>
-                            <p>Potrzebujesz projektu graficznego / wizualizacji dla Twoje aplikacji bądz firmy?</p>
+                            <h3>Design / GRAFIKA</h3>
+                            <p>Potrzebujesz projektu graficznego / wizualizacji ?</p>
                         </div>
                     </div><!--/ End first service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".8s\" >
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-android\"></i></span>
-                            <h3>Programowanie</h3>
-                            <p>Potrzebujesz dokonczyć projekt? Chcesz zlecic część pracy? Masz pojedyncze niedokończone zadania? Chcesz zrobić swój projekt? Chcesz odrazu mieć programistów i nie męczyć się z ich weryfikacją?</p>
+                            <h3>Programowanie APLIKACJI MOBILNYCH i WEBOWYCH</h3>
+                            <p>Potrzebujesz dokonczyć projekt? Chcesz zlecic część pracy? Masz pojedyncze niedokończone zadania? Chcesz zrobić swój projekt? </p>
                         </div>
 
                     </div><!--/ End Second service -->
 
-                    <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.1s\">
-                        <div class=\"service-content text-center\">
-                            <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-shopping-cart\"></i></span>
-                            <h3>Sprzęt</h3>
-                            <p>Nie działa coś w Twoim komputerze? Potrzebujesz ustawić sprzęt sieciowy ? Problem sprzetowy paraliżuje Twoją prace ?  </p>
-                        </div>
-                    </div><!--/ End Third service -->
+                        <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.1s\">
+                            <div class=\"service-content text-center\">
+                                <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-shopping-cart\"></i></span>
+                                <h3>E-commerce</h3>
+                                <p>Potrzebujesz sklepu internetowego albo platformy e-commerce ? Potrzebujesz coś zmienić albo ulepszyć w swoim biznesie?   </p>
+                            </div>
+                        </div><!--/ End Third service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.4s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-lightbulb-o\"></i></span>
-                            <h3>Porady</h3>
+                            <h3>Konsulting</h3>
                             <p>Masz problem it ale jesteś ekspertem w innej branzy? Chciałbyś doradzić się fachowca?</p>
                         </div>
                     </div><!--/ End 4th service -->
@@ -329,13 +277,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
             <!--Isotope filter start -->
             <div class=\"row text-right\">
                 <div class=\"isotope-nav\" data-isotope-nav=\"isotope\">
-                    <ul>
-                        <li><a href=\"#\" class=\"active\" data-filter=\"*\">Wszystkie</a></li>
-                        <li><a href=\"#\" data-filter=\".web-design\">Aplikacje internetowe</a></li>
-                        <li><a href=\"#\" data-filter=\".development\">Design</a></li>
-                        <li><a href=\"#\" data-filter=\".joomla\">Konsulting</a></li>
-                        <li><a href=\"#\" data-filter=\".wordpress\">Sprzęt komputerowy</a></li>
-                    </ul>
+
                 </div>
             </div><!-- Isotope filter end -->
         </div>
@@ -346,7 +288,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 web-design isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio1.jpg\" alt=\"\">
+                                <img src=\"/images/php.png\" alt=\"\">
+                                <p style=\"color: white;\">Aplikacja monitorująca dostępność usług sprzedażowych dla branży ubezpieczeń komunikacyjnych.</p>
                                 <figcaption>
                                     <h3>Startup Business</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -359,7 +302,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 development isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio2.jpg\" alt=\"\">
+                                <img src=\"/images/design.png\" alt=\"\">
+                                <p style=\"color: white;\">Wizualizacja aplikacji mobilnej w FIGMA. Na urządzenia IOS i Android.</p>
                                 <figcaption>
                                     <h3>Easy to Lanunch</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -372,7 +316,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 joomla isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio3.jpg\" alt=\"\">
+                                <img src=\"images/myworld.png\" alt=\"\">
+                                <p style=\"color: white;\">Sklep e-commerce z 5 mln produktów.</p>
                                 <figcaption>
                                     <h3>Your Business</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -385,7 +330,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 wordpress isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio4.jpg\" alt=\"\">
+                                <img src=\"images/cloud.png\" alt=\"\">
+                                <p style=\"color: white;\">Kolejki w chmurze AWS. Przetwarzanie danych w chmurze.</p>
                                 <figcaption>
                                     <h3>Prego Match</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -398,7 +344,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 joomla isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio5.jpg\" alt=\"\">
+                                <img src=\"images/recruit.png\" alt=\"\">
+                                <p style=\"color: white;\">Aplikacja do rekrutacji pracowników.</p>
                                 <figcaption>
                                     <h3>Fashion Brand</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -411,7 +358,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 development isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio6.jpg\" alt=\"\">
+                                <img src=\"/images/ai-art.png\" alt=\"\">
+                                <p style=\"color: white;\">Grafika wygenerowana przez AI.</p>
                                 <figcaption>
                                     <h3>The Insidage</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -424,7 +372,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 development isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio7.jpg\" alt=\"\">
+                                <img src=\"/images/wordpress.png\" alt=\"\">
+                                <p style=\"color: white;\">Plugin do Wordpress.</p>
                                 <figcaption>
                                     <h3>Light Carpet</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -438,6 +387,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
                                 <img src=\"/images/portfolio/portfolio8.jpg\" alt=\"\">
+                                <p style=\"color: white;\">Projekt graficzny wizytówki.</p>
                                 <figcaption>
                                     <h3>Amazing Keyboard</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -458,7 +408,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                 <div class=\"facts one col-md-3 col-sm-6\">
                     <span class=\"facts-icon\"><i class=\"fa fa-user\"></i></span>
                     <div class=\"facts-num\">
-                        <span class=\"counter\">1200</span>
+                        <span class=\"counter\">100</span>
                     </div>
                     <h3>Klientów</h3>
                 </div>
@@ -474,7 +424,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                 <div class=\"facts three col-md-3 col-sm-6\">
                     <span class=\"facts-icon\"><i class=\"fa fa-suitcase\"></i></span>
                     <div class=\"facts-num\">
-                        <span class=\"counter\">869</span>
+                        <span class=\"counter\">60</span>
                     </div>
                     <h3>Zrealizowanych projektów</h3>
                 </div>
@@ -482,7 +432,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                 <div class=\"facts four col-md-3 col-sm-6\">
                     <span class=\"facts-icon\"><i class=\"fa fa-trophy\"></i></span>
                     <div class=\"facts-num\">
-                        <span class=\"counter\">76</span>
+                        <span class=\"counter\">276</span>
                     </div>
                     <h3>Opinie zadowolonych ludzi</h3>
                 </div>
@@ -491,254 +441,17 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
         </div><!--/ Container end -->
     </section><!--/ Counter end -->
 
-    <!-- Feature box start -->
-    <section id=\"feature\" class=\"feature\">
-        <div class=\"container\">
-            <div class=\"row\">
-    ";
-        // line 475
-        echo "    ";
-        // line 476
-        echo "    ";
-        // line 477
-        echo "    ";
-        // line 478
-        echo "    ";
-        // line 479
-        echo "    ";
-        // line 480
-        echo "    ";
-        // line 481
-        echo "
-    ";
-        // line 483
-        echo "    ";
-        // line 484
-        echo "    ";
-        // line 485
-        echo "    ";
-        // line 486
-        echo "    ";
-        // line 487
-        echo "    ";
-        // line 488
-        echo "    ";
-        // line 489
-        echo "
-    ";
-        // line 491
-        echo "    ";
-        // line 492
-        echo "    ";
-        // line 493
-        echo "    ";
-        // line 494
-        echo "    ";
-        // line 495
-        echo "    ";
-        // line 496
-        echo "    ";
-        // line 497
-        echo "            </div><!-- Content row end -->
-
-            <div class=\"gap-40\"></div>
-
-            <div class=\"row\">
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-newspaper-o\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Branża IT</h3>
-                        <p>Eksperci w branży it. Nie robimy wszystkiego i niczego.</p>
-                    </div>
-                </div><!--/ End 1st featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-desktop\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Dopasowanie</h3>
-                        <p>Konketnie pod Twoje potrzeby.</p>
-                    </div>
-                </div><!--/ End 2nd featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-pagelines\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Lekkość i szybkość realizacji.</h3>
-                        <p>Szybki czas reakcji. Ty się zrelaksuj.</p>
-                    </div>
-                </div><!--/ End 3rd featurebox -->
-
             </div><!-- Content row end -->
 
             <div class=\"gap-40\"></div>
 
-            <div class=\"row\">
-
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Jakość</h3>
-                        <p>Dobrze zrobiona robota.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-whatsapp\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>24/7 Wsparcie</h3>
-                        <p>Jeśli masz jakąś wątpliwość bądz chcesz zobaczyc status realizacji.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-            </div><!-- Content row end -->
 
         </div><!--/ Container end -->
     </section><!--/ Feature box end -->
 
 
-    <section id=\"image-block\" class=\"image-block no-padding\">
-        <div class=\"container-fluid\">
-            <div class=\"row\">
-                <div class=\"col-md-6 ts-padding\" style=\"height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;\">
-                </div>
-                <div class=\"col-md-6 ts-padding img-block-right\">
-                    <div class=\"img-block-head text-center\">
-                        <h2>Dowiedz się więcej o NAS</h2>
-                        <h3>Czemu warto nas wybrać?</h3>
-                        <p>Jesteśmy 100 % polską firmą z polskim kapitałem. Wspieramy naszych. Opieramy się na zaufaniu i dbaniu o naszego klienta. Zawsze gramy uczciwie.
-                        </p>
-                    </div>
-
-                    <div class=\"gap-30\"></div>
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-bicycle\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Masa ekspertów IT</h3>
-                            <p>Do wyboru do koloru, gotowi aby Ci pomóc w mgnieniu oka. Zapomnij o marazmie.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Jakość</h3>
-                            <p>Płacisz zawsze za jakość i dobrze zrobioną robotę. Zwrot kosztów w przypadku braku satysfakcjii z usługi</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-street-view\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Ciągle wsparcie klienta</h3>
-                            <p>Dzwonisz kiedy chcesz i pomagamy odrazu. Miło i przyjacielsko.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                </div>
-            </div>
-        </div>
-    </section><!--/ Image block end -->
 
 
-    <!-- Team start -->
-    <section id=\"team\" class=\"team\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon pull-left\"><i class=\"fa fa-weixin\"></i></span>
-                    <h2 class=\"title\">Poznaj założycieli naszej firmy<span class=\"title-desc\">Byli managerowie i eksperci w branzy IT.</span></h2>
-                </div>
-            </div><!-- Title row end -->
-
-            <div class=\"row text-center\">
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/foto4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Hubert</h3>
-                            <p>czlonek zarządu / rozwój biznesu</p>
-                            <p>Przez wiele lat pracował jako programista dla największych światowych korporacji. Zawsze marzył robić coś dla Polski i udało się.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 1 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/team/team2.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Paweł</h3>
-                            <p>członek zarządu / rozwój biznesu</p>
-                            <p>Pracował wiele lat jako adwokat. Nietuzinkowy, nieszablonowy, profesjonalny w każdym calu.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 2 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team3.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Malgorzata</h3>
-                            <p>wizerunek / media</p>
-                            <p>Małgorzata pracowała jako dziennikarka w mediach wspierających Polske i Polskość.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 3 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team animate wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Tomasz</h3>
-                            <p>marketing internetowy / social media</p>
-                            <p>Specjalista od marketingu produktów i rozwoju social mediów. Bez niego nie usłyszelibyście o nas.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 4 end -->
-            </div><!--/ Content row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Team end -->
 
     <!-- Parallax 1 start -->
     <section class=\"parallax parallax1\">
@@ -749,8 +462,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <h2>Wejdź na wyższy level zleceń IT!</h2>
                     <h3>Zacznij teraz.</h3>
                     <p>
-                        <a href=\"#\" class=\"btn btn-primary white\">Podejmij zlecenie</a>
-                        <a href=\"#\" class=\"btn btn-primary solid\">Zaoferuj zlecenie</a>
+                        <a href=\"/trial\" class=\"btn btn-primary white\">Zleć problem</a>
+                        <a href=\"/post-job\" class=\"btn btn-primary solid\">Rozwiąż problem</a>
                     </p>
                 </div>
             </div>
@@ -773,8 +486,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Darmowy</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>0</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
+                            <li>1 ogłoszenie</li>
+                            <li>1 miesiąc</li>
                             <li>wsparcie 12/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"/trial\">Wybróbuj za darmo</a>
@@ -787,8 +500,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Standardowy</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>25</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
+                            <li>1 ogłoszenie</li>
+                            <li>2 tygodnie</li>
                             <li>wsparcie 12/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
@@ -801,8 +514,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Luksusowy</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>50</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>2 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
+                            <li>1 ogłoszenie</li>
+                            <li>1 miesiąc</li>
                             <li>wsparcie 24/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
@@ -815,9 +528,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Królewski</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>100</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>3 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
-                            <li>rozmowa z ekspertem</li>
+                            <li>1 ogłoszenie</li>
+                            <li>bez limitu czasowego</li>
                             <li>wsparcie 24/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
@@ -826,102 +538,6 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
             </div><!--/ Content row end -->
         </div><!--/  Container end-->
     </section><!--/ Pricing table end -->
-
-
-    <!-- Testimonial start-->
-    <section class=\"testimonial parallax parallax2\">
-        <div class=\"parallax-overlay\"></div>
-        <div class=\"container\">
-            <div class=\"row\">
-                <div id=\"testimonial-carousel\" class=\"owl-carousel owl-theme text-center testimonial-slide\">
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial1.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Polisoft to rewolucja w branży IT. Wreszcie cos Polskiego, dla nas dla prawdziwych patriotów.
-                            </p>
-                            <h3 class=\"name\">Karolina Pajączkowska<span>Magazyn komputerowy SPIDER WEB</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial2.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Narek Bedros<span>Sr. Manager</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial3.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Taline Lucine<span>Sales Manager</span></h3>
-                        </div>
-                    </div>
-                </div><!--/ Testimonial carousel end-->
-            </div><!--/ Row end-->
-        </div><!--/  Container end-->
-    </section><!--/ Testimonial end-->
-
-
-    <!-- Clients start -->
-    <section id=\"clients\" class=\"clients\">
-        <div class=\"container\">
-            <div class=\"row wow fadeInLeft\">
-                <div id=\"client-carousel\" class=\"col-sm-12 owl-carousel owl-theme text-center client-carousel\">
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client1.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client2.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client3.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client4.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client5.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client6.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client7.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client8.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                </div><!-- Owl carousel end -->
-            </div><!-- Main row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Clients end -->
 
 
     <!-- Footer start -->
@@ -1125,7 +741,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
 
     public function getDebugInfo()
     {
-        return array (  542 => 497,  540 => 496,  538 => 495,  536 => 494,  534 => 493,  532 => 492,  530 => 491,  527 => 489,  525 => 488,  523 => 487,  521 => 486,  519 => 485,  517 => 484,  515 => 483,  512 => 481,  510 => 480,  508 => 479,  506 => 478,  504 => 477,  502 => 476,  500 => 475,  190 => 166,  179 => 148,  43 => 1,);
+        return array (  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1229,75 +845,6 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         </a>
                     </div>
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-{#                        <li class=\"dropdown\">#}
-{#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Pages <i class=\"fa fa-angle-down\"></i></a>#}
-{#                            <div class=\"dropdown-menu\">#}
-{#                                <ul>#}
-{#                                    <li><a href=\"/team.html\">Our Team</a></li>#}
-{#                                    <li><a href=\"/about2.html\">About Us - 2</a></li>#}
-{#                                    <li><a href=\"/service2.html\">Services - 2</a></li>#}
-{#                                    <li><a href=\"/service-single.html\">Services Single</a></li>#}
-{#                                    <li><a href=\"/pricing.html\">Pricing Table</a></li>#}
-{#                                    <li><a href=\"/404.html\">404 Page</a></li>#}
-{#                                </ul>#}
-{#                            </div>#}
-{#                        </li>#}
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-{#                        <li class=\"dropdown\">#}
-{#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Features <i class=\"fa fa-angle-down\"></i></a>#}
-{#                            <div class=\"dropdown-menu\">#}
-{#                                <ul>#}
-{#                                    <li><a href=\"/typography.html\">Typography</a></li>#}
-{#                                    <li><a href=\"/elements.html\">Elements</a></li>#}
-{#                                </ul>#}
-{#                            </div>#}
-{#                        </li>#}
-                        <li><a href=\"/contact.html\">Kontakt</a></li>
-                    </ul>
-                </nav><!--/ Navigation end -->
             </div><!--/ Row end -->
         </div><!--/ Container end -->
     </header><!--/ Header end -->
@@ -1311,8 +858,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <img class=\"\" src=\"/images/slider/bg1.jpg\" alt=\"slider\">
                     </div>
                     <div class=\"cd-full-width\">
-                        <h2>Rozwiąż NATYCHMIAST swój problem IT. My znajdziemy ludzi i sposób.</h2>
-                        <h3>poraz pierwszy całkowicie po polsku i wspierając Polske. </h3>
+                        <h2>Rozwiąż NATYCHMIAST swój problem IT</h2>
                         <a href=\"/trial\" class=\"btn btn-primary solid cd-btn\">Zleć problem</a>
                         <a href=\"/post-job\" class=\"btn btn-primary white cd-btn\">Rozwiąż problem</a>
                     </div> <!-- .cd-full-width -->
@@ -1381,7 +927,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
             <div class=\"row\">
                 <div class=\"col-md-12 heading\">
                     <span class=\"title-icon pull-left\"><i class=\"fa fa-cogs\"></i></span>
-                    <h2 class=\"title\">Czym się zajmujemy <span class=\"title-desc\">Możemy Ci pomóc miedzy innymi w:</span></h2>
+                    <h2 class=\"title\">Specjalizujemy się w:</h2>
                 </div>
             </div><!-- Title row end -->
 
@@ -1390,32 +936,32 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".5s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-tachometer\"></i></span>
-                            <h3>Design</h3>
-                            <p>Potrzebujesz projektu graficznego / wizualizacji dla Twoje aplikacji bądz firmy?</p>
+                            <h3>Design / GRAFIKA</h3>
+                            <p>Potrzebujesz projektu graficznego / wizualizacji ?</p>
                         </div>
                     </div><!--/ End first service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".8s\" >
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-android\"></i></span>
-                            <h3>Programowanie</h3>
-                            <p>Potrzebujesz dokonczyć projekt? Chcesz zlecic część pracy? Masz pojedyncze niedokończone zadania? Chcesz zrobić swój projekt? Chcesz odrazu mieć programistów i nie męczyć się z ich weryfikacją?</p>
+                            <h3>Programowanie APLIKACJI MOBILNYCH i WEBOWYCH</h3>
+                            <p>Potrzebujesz dokonczyć projekt? Chcesz zlecic część pracy? Masz pojedyncze niedokończone zadania? Chcesz zrobić swój projekt? </p>
                         </div>
 
                     </div><!--/ End Second service -->
 
-                    <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.1s\">
-                        <div class=\"service-content text-center\">
-                            <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-shopping-cart\"></i></span>
-                            <h3>Sprzęt</h3>
-                            <p>Nie działa coś w Twoim komputerze? Potrzebujesz ustawić sprzęt sieciowy ? Problem sprzetowy paraliżuje Twoją prace ?  </p>
-                        </div>
-                    </div><!--/ End Third service -->
+                        <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.1s\">
+                            <div class=\"service-content text-center\">
+                                <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-shopping-cart\"></i></span>
+                                <h3>E-commerce</h3>
+                                <p>Potrzebujesz sklepu internetowego albo platformy e-commerce ? Potrzebujesz coś zmienić albo ulepszyć w swoim biznesie?   </p>
+                            </div>
+                        </div><!--/ End Third service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.4s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-lightbulb-o\"></i></span>
-                            <h3>Porady</h3>
+                            <h3>Konsulting</h3>
                             <p>Masz problem it ale jesteś ekspertem w innej branzy? Chciałbyś doradzić się fachowca?</p>
                         </div>
                     </div><!--/ End 4th service -->
@@ -1437,13 +983,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
             <!--Isotope filter start -->
             <div class=\"row text-right\">
                 <div class=\"isotope-nav\" data-isotope-nav=\"isotope\">
-                    <ul>
-                        <li><a href=\"#\" class=\"active\" data-filter=\"*\">Wszystkie</a></li>
-                        <li><a href=\"#\" data-filter=\".web-design\">Aplikacje internetowe</a></li>
-                        <li><a href=\"#\" data-filter=\".development\">Design</a></li>
-                        <li><a href=\"#\" data-filter=\".joomla\">Konsulting</a></li>
-                        <li><a href=\"#\" data-filter=\".wordpress\">Sprzęt komputerowy</a></li>
-                    </ul>
+
                 </div>
             </div><!-- Isotope filter end -->
         </div>
@@ -1454,7 +994,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 web-design isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio1.jpg\" alt=\"\">
+                                <img src=\"/images/php.png\" alt=\"\">
+                                <p style=\"color: white;\">Aplikacja monitorująca dostępność usług sprzedażowych dla branży ubezpieczeń komunikacyjnych.</p>
                                 <figcaption>
                                     <h3>Startup Business</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1467,7 +1008,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 development isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio2.jpg\" alt=\"\">
+                                <img src=\"/images/design.png\" alt=\"\">
+                                <p style=\"color: white;\">Wizualizacja aplikacji mobilnej w FIGMA. Na urządzenia IOS i Android.</p>
                                 <figcaption>
                                     <h3>Easy to Lanunch</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1480,7 +1022,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 joomla isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio3.jpg\" alt=\"\">
+                                <img src=\"images/myworld.png\" alt=\"\">
+                                <p style=\"color: white;\">Sklep e-commerce z 5 mln produktów.</p>
                                 <figcaption>
                                     <h3>Your Business</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1493,7 +1036,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 wordpress isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio4.jpg\" alt=\"\">
+                                <img src=\"images/cloud.png\" alt=\"\">
+                                <p style=\"color: white;\">Kolejki w chmurze AWS. Przetwarzanie danych w chmurze.</p>
                                 <figcaption>
                                     <h3>Prego Match</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1506,7 +1050,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 joomla isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio5.jpg\" alt=\"\">
+                                <img src=\"images/recruit.png\" alt=\"\">
+                                <p style=\"color: white;\">Aplikacja do rekrutacji pracowników.</p>
                                 <figcaption>
                                     <h3>Fashion Brand</h3>
                                     <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1519,7 +1064,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 development isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio6.jpg\" alt=\"\">
+                                <img src=\"/images/ai-art.png\" alt=\"\">
+                                <p style=\"color: white;\">Grafika wygenerowana przez AI.</p>
                                 <figcaption>
                                     <h3>The Insidage</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1532,7 +1078,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-sm-3 development isotope-item\">
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio7.jpg\" alt=\"\">
+                                <img src=\"/images/wordpress.png\" alt=\"\">
+                                <p style=\"color: white;\">Plugin do Wordpress.</p>
                                 <figcaption>
                                     <h3>Light Carpet</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1546,6 +1093,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <div class=\"grid\">
                             <figure class=\"effect-oscar\">
                                 <img src=\"/images/portfolio/portfolio8.jpg\" alt=\"\">
+                                <p style=\"color: white;\">Projekt graficzny wizytówki.</p>
                                 <figcaption>
                                     <h3>Amazing Keyboard</h3>
                                     <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
@@ -1566,7 +1114,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                 <div class=\"facts one col-md-3 col-sm-6\">
                     <span class=\"facts-icon\"><i class=\"fa fa-user\"></i></span>
                     <div class=\"facts-num\">
-                        <span class=\"counter\">1200</span>
+                        <span class=\"counter\">100</span>
                     </div>
                     <h3>Klientów</h3>
                 </div>
@@ -1582,7 +1130,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                 <div class=\"facts three col-md-3 col-sm-6\">
                     <span class=\"facts-icon\"><i class=\"fa fa-suitcase\"></i></span>
                     <div class=\"facts-num\">
-                        <span class=\"counter\">869</span>
+                        <span class=\"counter\">60</span>
                     </div>
                     <h3>Zrealizowanych projektów</h3>
                 </div>
@@ -1590,7 +1138,7 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                 <div class=\"facts four col-md-3 col-sm-6\">
                     <span class=\"facts-icon\"><i class=\"fa fa-trophy\"></i></span>
                     <div class=\"facts-num\">
-                        <span class=\"counter\">76</span>
+                        <span class=\"counter\">276</span>
                     </div>
                     <h3>Opinie zadowolonych ludzi</h3>
                 </div>
@@ -1599,233 +1147,17 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
         </div><!--/ Container end -->
     </section><!--/ Counter end -->
 
-    <!-- Feature box start -->
-    <section id=\"feature\" class=\"feature\">
-        <div class=\"container\">
-            <div class=\"row\">
-    {#                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">#}
-    {#                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-heart-o\"></i></span>#}
-    {#                    <div class=\"feature-content\">#}
-    {#                        <h3>Clean &amp; Modern Design</h3>#}
-    {#                        <p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>#}
-    {#                    </div>#}
-    {#                </div><!--/ End first featurebox -->#}
-
-    {#                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">#}
-    {#                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-codepen\"></i></span>#}
-    {#                    <div class=\"feature-content\">#}
-    {#                        <h3>Useful Shortcodes</h3>#}
-    {#                        <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>#}
-    {#                    </div>#}
-    {#                </div><!--/ End 2nd featurebox -->#}
-
-    {#                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">#}
-    {#                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-film\"></i></span>#}
-    {#                    <div class=\"feature-content\">#}
-    {#                        <h3>Parallax Section</h3>#}
-    {#                        <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>#}
-    {#                    </div>#}
-    {#                </div><!--/ End 3rd featurebox -->#}
             </div><!-- Content row end -->
 
             <div class=\"gap-40\"></div>
 
-            <div class=\"row\">
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-newspaper-o\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Branża IT</h3>
-                        <p>Eksperci w branży it. Nie robimy wszystkiego i niczego.</p>
-                    </div>
-                </div><!--/ End 1st featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-desktop\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Dopasowanie</h3>
-                        <p>Konketnie pod Twoje potrzeby.</p>
-                    </div>
-                </div><!--/ End 2nd featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-pagelines\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Lekkość i szybkość realizacji.</h3>
-                        <p>Szybki czas reakcji. Ty się zrelaksuj.</p>
-                    </div>
-                </div><!--/ End 3rd featurebox -->
-
-            </div><!-- Content row end -->
-
-            <div class=\"gap-40\"></div>
-
-            <div class=\"row\">
-
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Jakość</h3>
-                        <p>Dobrze zrobiona robota.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-whatsapp\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>24/7 Wsparcie</h3>
-                        <p>Jeśli masz jakąś wątpliwość bądz chcesz zobaczyc status realizacji.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-            </div><!-- Content row end -->
 
         </div><!--/ Container end -->
     </section><!--/ Feature box end -->
 
 
-    <section id=\"image-block\" class=\"image-block no-padding\">
-        <div class=\"container-fluid\">
-            <div class=\"row\">
-                <div class=\"col-md-6 ts-padding\" style=\"height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;\">
-                </div>
-                <div class=\"col-md-6 ts-padding img-block-right\">
-                    <div class=\"img-block-head text-center\">
-                        <h2>Dowiedz się więcej o NAS</h2>
-                        <h3>Czemu warto nas wybrać?</h3>
-                        <p>Jesteśmy 100 % polską firmą z polskim kapitałem. Wspieramy naszych. Opieramy się na zaufaniu i dbaniu o naszego klienta. Zawsze gramy uczciwie.
-                        </p>
-                    </div>
-
-                    <div class=\"gap-30\"></div>
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-bicycle\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Masa ekspertów IT</h3>
-                            <p>Do wyboru do koloru, gotowi aby Ci pomóc w mgnieniu oka. Zapomnij o marazmie.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Jakość</h3>
-                            <p>Płacisz zawsze za jakość i dobrze zrobioną robotę. Zwrot kosztów w przypadku braku satysfakcjii z usługi</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-street-view\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Ciągle wsparcie klienta</h3>
-                            <p>Dzwonisz kiedy chcesz i pomagamy odrazu. Miło i przyjacielsko.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                </div>
-            </div>
-        </div>
-    </section><!--/ Image block end -->
 
 
-    <!-- Team start -->
-    <section id=\"team\" class=\"team\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon pull-left\"><i class=\"fa fa-weixin\"></i></span>
-                    <h2 class=\"title\">Poznaj założycieli naszej firmy<span class=\"title-desc\">Byli managerowie i eksperci w branzy IT.</span></h2>
-                </div>
-            </div><!-- Title row end -->
-
-            <div class=\"row text-center\">
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/foto4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Hubert</h3>
-                            <p>czlonek zarządu / rozwój biznesu</p>
-                            <p>Przez wiele lat pracował jako programista dla największych światowych korporacji. Zawsze marzył robić coś dla Polski i udało się.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 1 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/team/team2.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Paweł</h3>
-                            <p>członek zarządu / rozwój biznesu</p>
-                            <p>Pracował wiele lat jako adwokat. Nietuzinkowy, nieszablonowy, profesjonalny w każdym calu.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 2 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team3.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Malgorzata</h3>
-                            <p>wizerunek / media</p>
-                            <p>Małgorzata pracowała jako dziennikarka w mediach wspierających Polske i Polskość.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 3 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team animate wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Tomasz</h3>
-                            <p>marketing internetowy / social media</p>
-                            <p>Specjalista od marketingu produktów i rozwoju social mediów. Bez niego nie usłyszelibyście o nas.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 4 end -->
-            </div><!--/ Content row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Team end -->
 
     <!-- Parallax 1 start -->
     <section class=\"parallax parallax1\">
@@ -1836,8 +1168,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <h2>Wejdź na wyższy level zleceń IT!</h2>
                     <h3>Zacznij teraz.</h3>
                     <p>
-                        <a href=\"#\" class=\"btn btn-primary white\">Podejmij zlecenie</a>
-                        <a href=\"#\" class=\"btn btn-primary solid\">Zaoferuj zlecenie</a>
+                        <a href=\"/trial\" class=\"btn btn-primary white\">Zleć problem</a>
+                        <a href=\"/post-job\" class=\"btn btn-primary solid\">Rozwiąż problem</a>
                     </p>
                 </div>
             </div>
@@ -1860,8 +1192,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Darmowy</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>0</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
+                            <li>1 ogłoszenie</li>
+                            <li>1 miesiąc</li>
                             <li>wsparcie 12/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"/trial\">Wybróbuj za darmo</a>
@@ -1874,8 +1206,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Standardowy</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>25</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
+                            <li>1 ogłoszenie</li>
+                            <li>2 tygodnie</li>
                             <li>wsparcie 12/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
@@ -1888,8 +1220,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Luksusowy</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>50</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>2 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
+                            <li>1 ogłoszenie</li>
+                            <li>1 miesiąc</li>
                             <li>wsparcie 24/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
@@ -1902,9 +1234,8 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <span class=\"plan-name\">Królewski</span>
                         <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>100</strong><sub>.00</sub></p>
                         <ul class=\"list-unstyled\">
-                            <li>3 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
-                            <li>rozmowa z ekspertem</li>
+                            <li>1 ogłoszenie</li>
+                            <li>bez limitu czasowego</li>
                             <li>wsparcie 24/7</li>
                         </ul>
                         <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
@@ -1913,102 +1244,6 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
             </div><!--/ Content row end -->
         </div><!--/  Container end-->
     </section><!--/ Pricing table end -->
-
-
-    <!-- Testimonial start-->
-    <section class=\"testimonial parallax parallax2\">
-        <div class=\"parallax-overlay\"></div>
-        <div class=\"container\">
-            <div class=\"row\">
-                <div id=\"testimonial-carousel\" class=\"owl-carousel owl-theme text-center testimonial-slide\">
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial1.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Polisoft to rewolucja w branży IT. Wreszcie cos Polskiego, dla nas dla prawdziwych patriotów.
-                            </p>
-                            <h3 class=\"name\">Karolina Pajączkowska<span>Magazyn komputerowy SPIDER WEB</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial2.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Narek Bedros<span>Sr. Manager</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial3.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Taline Lucine<span>Sales Manager</span></h3>
-                        </div>
-                    </div>
-                </div><!--/ Testimonial carousel end-->
-            </div><!--/ Row end-->
-        </div><!--/  Container end-->
-    </section><!--/ Testimonial end-->
-
-
-    <!-- Clients start -->
-    <section id=\"clients\" class=\"clients\">
-        <div class=\"container\">
-            <div class=\"row wow fadeInLeft\">
-                <div id=\"client-carousel\" class=\"col-sm-12 owl-carousel owl-theme text-center client-carousel\">
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client1.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client2.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client3.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client4.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client5.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client6.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client7.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client8.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                </div><!-- Owl carousel end -->
-            </div><!-- Main row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Clients end -->
 
 
     <!-- Footer start -->

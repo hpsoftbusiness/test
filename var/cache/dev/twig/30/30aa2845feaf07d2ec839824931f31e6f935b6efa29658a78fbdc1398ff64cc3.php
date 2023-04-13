@@ -311,137 +311,46 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
                     <br>
 
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        ";
-        // line 305
-        echo "                        ";
-        // line 306
-        echo "                        ";
-        // line 307
-        echo "                        ";
-        // line 308
-        echo "                        ";
-        // line 309
-        echo "                        ";
-        // line 310
-        echo "                        ";
-        // line 311
-        echo "                        ";
-        // line 312
-        echo "                        ";
-        // line 313
-        echo "                        ";
-        // line 314
-        echo "                        ";
-        // line 315
-        echo "                        ";
-        // line 316
-        echo "                        ";
-        // line 317
-        echo "                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        ";
-        // line 327
-        echo "                        ";
-        // line 328
-        echo "                        ";
-        // line 329
-        echo "                        ";
-        // line 330
-        echo "                        ";
-        // line 331
-        echo "                        ";
-        // line 332
-        echo "                        ";
-        // line 333
-        echo "                        ";
-        // line 334
-        echo "                        ";
-        // line 335
-        echo "                        <li><a href=\"/contact.html\">Kontakt</a></li>
-
-                    </ul>
-                </nav><!--/ Navigation end -->
+           
             </div><!--/ Row end -->
             <h4 style=\"color:white;\">Zadanie: ";
-        // line 340
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 340, $this->source); })()), "scope", [], "any", false, false, false, 340), "html", null, true);
+        // line 271
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 271, $this->source); })()), "scope", [], "any", false, false, false, 271), "html", null, true);
         echo "</h4>
             <h4 style=\"color:white;\">Kategoria: ";
-        // line 341
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 341, $this->source); })()), "category", [], "any", false, false, false, 341), "html", null, true);
+        // line 272
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 272, $this->source); })()), "category", [], "any", false, false, false, 272), "html", null, true);
         echo "</h4>
             <h4 style=\"color:white;\">Technologia: ";
-        // line 342
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 342, $this->source); })()), "technology", [], "any", false, false, false, 342), "html", null, true);
+        // line 273
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 273, $this->source); })()), "technology", [], "any", false, false, false, 273), "html", null, true);
         echo "</h4>
             <h4 style=\"color: white;\">Wymagane umiejętnośći: ";
-        // line 343
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 343, $this->source); })()), "skills", [], "any", false, false, false, 343), "html", null, true);
+        // line 274
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 274, $this->source); })()), "skills", [], "any", false, false, false, 274), "html", null, true);
         echo "</h4>
             <h4 style=\" color: white;\">Zarobek: ";
-        // line 344
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 344, $this->source); })()), "price", [], "any", false, false, false, 344), "html", null, true);
+        // line 275
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 275, $this->source); })()), "price", [], "any", false, false, false, 275), "html", null, true);
         echo " PLN</h4>
             <h4 style=\" color: white;\">Czas: ";
-        // line 345
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 345, $this->source); })()), "ExecutionTime", [], "any", false, false, false, 345), "html", null, true);
+        // line 276
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["post"]) || array_key_exists("post", $context) ? $context["post"] : (function () { throw new RuntimeError('Variable "post" does not exist.', 276, $this->source); })()), "ExecutionTime", [], "any", false, false, false, 276), "html", null, true);
         echo " godzin</h4>
             <h4 style=\" color: white;\"> Ryzyko:
                 ";
-        // line 347
+        // line 278
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, (isset($context["detail"]) || array_key_exists("detail", $context) ? $context["detail"] : (function () { throw new RuntimeError('Variable "detail" does not exist.', 347, $this->source); })()), "difficulty", [], "any", false, false, false, 347)));
+        $context['_seq'] = twig_ensure_traversable(range(1, twig_get_attribute($this->env, $this->source, (isset($context["detail"]) || array_key_exists("detail", $context) ? $context["detail"] : (function () { throw new RuntimeError('Variable "detail" does not exist.', 278, $this->source); })()), "difficulty", [], "any", false, false, false, 278)));
         foreach ($context['_seq'] as $context["_key"] => $context["d"]) {
-            // line 348
+            // line 279
             echo "                    <span class=\"fa fa-star checked\" style=\"color: red;\"></span>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['d'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 350
+        // line 281
         echo "                <span class=\"fa fa-star\" style=\"color: black;\"></span>
                 <span class=\"fa fa-star\" style=\"color: black;\"></span>
             </h4>
@@ -526,8 +435,8 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
         <div class=\"container\">
                     <br>
                     <p align=\"justify\">";
-        // line 433
-        echo twig_get_attribute($this->env, $this->source, (isset($context["detail"]) || array_key_exists("detail", $context) ? $context["detail"] : (function () { throw new RuntimeError('Variable "detail" does not exist.', 433, $this->source); })()), "description", [], "any", false, false, false, 433);
+        // line 364
+        echo twig_get_attribute($this->env, $this->source, (isset($context["detail"]) || array_key_exists("detail", $context) ? $context["detail"] : (function () { throw new RuntimeError('Variable "detail" does not exist.', 364, $this->source); })()), "description", [], "any", false, false, false, 364);
         echo "</p>
                     <br>
 
@@ -642,7 +551,7 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
 
     public function getDebugInfo()
     {
-        return array (  530 => 433,  445 => 350,  438 => 348,  434 => 347,  429 => 345,  425 => 344,  421 => 343,  417 => 342,  413 => 341,  409 => 340,  402 => 335,  400 => 334,  398 => 333,  396 => 332,  394 => 331,  392 => 330,  390 => 329,  388 => 328,  386 => 327,  375 => 317,  373 => 316,  371 => 315,  369 => 314,  367 => 313,  365 => 312,  363 => 311,  361 => 310,  359 => 309,  357 => 308,  355 => 307,  353 => 306,  351 => 305,  262 => 218,  43 => 1,);
+        return array (  439 => 364,  354 => 281,  347 => 279,  343 => 278,  338 => 276,  334 => 275,  330 => 274,  326 => 273,  322 => 272,  318 => 271,  262 => 218,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -915,76 +824,7 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
                     <br>
 
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        {#                        <li class=\"dropdown\">#}
-                        {#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Pages <i class=\"fa fa-angle-down\"></i></a>#}
-                        {#                            <div class=\"dropdown-menu\">#}
-                        {#                                <ul>#}
-                        {#                                    <li><a href=\"/team.html\">Our Team</a></li>#}
-                        {#                                    <li><a href=\"/about2.html\">About Us - 2</a></li>#}
-                        {#                                    <li><a href=\"/service2.html\">Services - 2</a></li>#}
-                        {#                                    <li><a href=\"/service-single.html\">Services Single</a></li>#}
-                        {#                                    <li><a href=\"/pricing.html\">Pricing Table</a></li>#}
-                        {#                                    <li><a href=\"/404.html\">404 Page</a></li>#}
-                        {#                                </ul>#}
-                        {#                            </div>#}
-                        {#                        </li>#}
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        {#                        <li class=\"dropdown\">#}
-                        {#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Features <i class=\"fa fa-angle-down\"></i></a>#}
-                        {#                            <div class=\"dropdown-menu\">#}
-                        {#                                <ul>#}
-                        {#                                    <li><a href=\"/typography.html\">Typography</a></li>#}
-                        {#                                    <li><a href=\"/elements.html\">Elements</a></li>#}
-                        {#                                </ul>#}
-                        {#                            </div>#}
-                        {#                        </li>#}
-                        <li><a href=\"/contact.html\">Kontakt</a></li>
-
-                    </ul>
-                </nav><!--/ Navigation end -->
+           
             </div><!--/ Row end -->
             <h4 style=\"color:white;\">Zadanie: {{ post.scope }}</h4>
             <h4 style=\"color:white;\">Kategoria: {{ post.category }}</h4>

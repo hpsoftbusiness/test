@@ -8,6 +8,7 @@ use App\Repository\JobSubscriptionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Twilio\Rest;
 
 class MailController extends AbstractController
 {
@@ -17,6 +18,20 @@ class MailController extends AbstractController
         $name = $request->get('name');
         $email = $request->get('email');
         $phone = $request->get('phone');
+
+        $sid = "AC4db3c5c0f4ef2dcf7860724d6d9b0d34"; // Your Account SID from https://console.twilio.com
+        $token = "de439f87afa15a97c2c9a772b8b1f19e"; // Your Auth Token from https://console.twilio.com
+        $client = new \Twilio\Rest\Client($sid, $token);
+
+        $client->messages->create(
+            '+48531730179',
+            [
+                'from' => '+15075026610',
+                'body' => "test itnuke"
+            ]
+        );
+
+
         $message = $jobSubscriptionRepository->subscribeForJob($id, $name, $email, $phone);
         $response = new Response();
         $response->setContent(json_encode($message));

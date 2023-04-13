@@ -415,100 +415,9 @@ class __TwigTemplate_0265e94aff87559f39b518afe1d2bde424e4b7b96e833b21eae7f7f5740
                     <br>
 
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        ";
-        // line 409
-        echo "                        ";
-        // line 410
-        echo "                        ";
-        // line 411
-        echo "                        ";
-        // line 412
-        echo "                        ";
-        // line 413
-        echo "                        ";
-        // line 414
-        echo "                        ";
-        // line 415
-        echo "                        ";
-        // line 416
-        echo "                        ";
-        // line 417
-        echo "                        ";
-        // line 418
-        echo "                        ";
-        // line 419
-        echo "                        ";
-        // line 420
-        echo "                        ";
-        // line 421
-        echo "                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        ";
-        // line 431
-        echo "                        ";
-        // line 432
-        echo "                        ";
-        // line 433
-        echo "                        ";
-        // line 434
-        echo "                        ";
-        // line 435
-        echo "                        ";
-        // line 436
-        echo "                        ";
-        // line 437
-        echo "                        ";
-        // line 438
-        echo "                        ";
-        // line 439
-        echo "                        <li><a href=\"/contact.html\">Kontakt</a></li>
 
-                    </ul>
-                </nav><!--/ Navigation end -->
             </div><!--/ Row end -->
-            <h2 style=\"color:white;\">Zleć prace i spij spokojnie.</h2>
+            <h2 style=\"color:white;\">Zleć prace.</h2>
 
 
                 <span class=\"fa fa-star\" style=\"color: black;\"></span>
@@ -593,41 +502,41 @@ class __TwigTemplate_0265e94aff87559f39b518afe1d2bde424e4b7b96e833b21eae7f7f5740
     <!-- Service box start -->
     <section id=\"service\" class=\"service angle\">
         <div class=\"container\">
-            <div class=\"form-row\">
+            <div class=\"form-group row\">
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Kategoria</label>
                     <div class=\"input-group\">
-                        <input type=\"text\" style=\"color: grey;\" class=\"form-control\" id=\"category\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\" style=\"color: grey;\"  size=\"50\" class=\"form-control\" id=\"category\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Technologia</label>
                     <div class=\"input-group\">
-                        <input type=\"text\" style=\"color: grey;\" class=\"form-control\" id=\"technology\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\" size=\"50\" style=\"color: grey;\" class=\"form-control\" id=\"technology\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Cena w PLN</label>
                     <div class=\"input-group\">
-                        <input type=\"text\"  style=\"color: grey;\" class=\"form-control\" id=\"price\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"   size=\"50\" style=\"color: grey;\" class=\"form-control\" id=\"price\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Szacowany czas</label>
                     <div class=\"input-group\">
-                        <input type=\"text\"  style=\"color: grey;\" class=\"form-control\" id=\"time\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"   size=\"50\" style=\"color: grey;\" class=\"form-control\" id=\"time\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Zakres</label>
                     <div class=\"input-group\">
-                        <input type=\"text\"  style=\"color: grey;\"class=\"form-control\" id=\"scope\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"  size=\"50\"  style=\"color: grey;\"class=\"form-control\" id=\"scope\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Wymagane umiejętnośći</label>
                     <div class=\"input-group\">
-                        <input type=\"text\" style=\"color: grey;\" class=\"form-control is-invalid\" id=\"skills\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"  size=\"50\" style=\"color: grey;\" class=\"form-control is-invalid\" id=\"skills\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
             </div>
@@ -754,7 +663,7 @@ class __TwigTemplate_0265e94aff87559f39b518afe1d2bde424e4b7b96e833b21eae7f7f5740
 
     public function getDebugInfo()
     {
-        return array (  506 => 439,  504 => 438,  502 => 437,  500 => 436,  498 => 435,  496 => 434,  494 => 433,  492 => 432,  490 => 431,  479 => 421,  477 => 420,  475 => 419,  473 => 418,  471 => 417,  469 => 416,  467 => 415,  465 => 414,  463 => 413,  461 => 412,  459 => 411,  457 => 410,  455 => 409,  366 => 322,  43 => 1,);
+        return array (  366 => 322,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1131,78 +1040,9 @@ class __TwigTemplate_0265e94aff87559f39b518afe1d2bde424e4b7b96e833b21eae7f7f5740
                     <br>
 
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        {#                        <li class=\"dropdown\">#}
-                        {#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Pages <i class=\"fa fa-angle-down\"></i></a>#}
-                        {#                            <div class=\"dropdown-menu\">#}
-                        {#                                <ul>#}
-                        {#                                    <li><a href=\"/team.html\">Our Team</a></li>#}
-                        {#                                    <li><a href=\"/about2.html\">About Us - 2</a></li>#}
-                        {#                                    <li><a href=\"/service2.html\">Services - 2</a></li>#}
-                        {#                                    <li><a href=\"/service-single.html\">Services Single</a></li>#}
-                        {#                                    <li><a href=\"/pricing.html\">Pricing Table</a></li>#}
-                        {#                                    <li><a href=\"/404.html\">404 Page</a></li>#}
-                        {#                                </ul>#}
-                        {#                            </div>#}
-                        {#                        </li>#}
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        {#                        <li class=\"dropdown\">#}
-                        {#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Features <i class=\"fa fa-angle-down\"></i></a>#}
-                        {#                            <div class=\"dropdown-menu\">#}
-                        {#                                <ul>#}
-                        {#                                    <li><a href=\"/typography.html\">Typography</a></li>#}
-                        {#                                    <li><a href=\"/elements.html\">Elements</a></li>#}
-                        {#                                </ul>#}
-                        {#                            </div>#}
-                        {#                        </li>#}
-                        <li><a href=\"/contact.html\">Kontakt</a></li>
 
-                    </ul>
-                </nav><!--/ Navigation end -->
             </div><!--/ Row end -->
-            <h2 style=\"color:white;\">Zleć prace i spij spokojnie.</h2>
+            <h2 style=\"color:white;\">Zleć prace.</h2>
 
 
                 <span class=\"fa fa-star\" style=\"color: black;\"></span>
@@ -1287,41 +1127,41 @@ class __TwigTemplate_0265e94aff87559f39b518afe1d2bde424e4b7b96e833b21eae7f7f5740
     <!-- Service box start -->
     <section id=\"service\" class=\"service angle\">
         <div class=\"container\">
-            <div class=\"form-row\">
+            <div class=\"form-group row\">
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Kategoria</label>
                     <div class=\"input-group\">
-                        <input type=\"text\" style=\"color: grey;\" class=\"form-control\" id=\"category\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\" style=\"color: grey;\"  size=\"50\" class=\"form-control\" id=\"category\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Technologia</label>
                     <div class=\"input-group\">
-                        <input type=\"text\" style=\"color: grey;\" class=\"form-control\" id=\"technology\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\" size=\"50\" style=\"color: grey;\" class=\"form-control\" id=\"technology\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Cena w PLN</label>
                     <div class=\"input-group\">
-                        <input type=\"text\"  style=\"color: grey;\" class=\"form-control\" id=\"price\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"   size=\"50\" style=\"color: grey;\" class=\"form-control\" id=\"price\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Szacowany czas</label>
                     <div class=\"input-group\">
-                        <input type=\"text\"  style=\"color: grey;\" class=\"form-control\" id=\"time\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"   size=\"50\" style=\"color: grey;\" class=\"form-control\" id=\"time\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Zakres</label>
                     <div class=\"input-group\">
-                        <input type=\"text\"  style=\"color: grey;\"class=\"form-control\" id=\"scope\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"  size=\"50\"  style=\"color: grey;\"class=\"form-control\" id=\"scope\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
                 <div class=\"col-md-4 mb-3\">
                     <label for=\"validationServerUsername\">Wymagane umiejętnośći</label>
                     <div class=\"input-group\">
-                        <input type=\"text\" style=\"color: grey;\" class=\"form-control is-invalid\" id=\"skills\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
+                        <input type=\"text\"  size=\"50\" style=\"color: grey;\" class=\"form-control is-invalid\" id=\"skills\" placeholder=\"\" aria-describedby=\"inputGroupPrepend3\" required>
                     </div>
                 </div>
             </div>

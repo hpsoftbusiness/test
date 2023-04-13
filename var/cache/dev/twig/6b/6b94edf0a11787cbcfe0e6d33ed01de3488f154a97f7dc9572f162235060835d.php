@@ -139,97 +139,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
                         </a>
                     </div>
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        ";
-        // line 136
-        echo "                        ";
-        // line 137
-        echo "                        ";
-        // line 138
-        echo "                        ";
-        // line 139
-        echo "                        ";
-        // line 140
-        echo "                        ";
-        // line 141
-        echo "                        ";
-        // line 142
-        echo "                        ";
-        // line 143
-        echo "                        ";
-        // line 144
-        echo "                        ";
-        // line 145
-        echo "                        ";
-        // line 146
-        echo "                        ";
-        // line 147
-        echo "                        ";
-        // line 148
-        echo "                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        ";
-        // line 158
-        echo "                        ";
-        // line 159
-        echo "                        ";
-        // line 160
-        echo "                        ";
-        // line 161
-        echo "                        ";
-        // line 162
-        echo "                        ";
-        // line 163
-        echo "                        ";
-        // line 164
-        echo "                        ";
-        // line 165
-        echo "                        ";
-        // line 166
-        echo "                        <li><a href=\"/contact.html\">Kontakt</a></li>
-                    </ul>
-                </nav><!--/ Navigation end -->
+
             </div><!--/ Row end -->
         </div><!--/ Container end -->
     </header><!--/ Header end -->
@@ -320,733 +230,161 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
     <!-- Service box start -->
     <section id=\"service\" class=\"service angle\">
         <div class=\"container\">
-            <table class=\"table\">
+            ";
+        // line 191
+        if ((0 === twig_compare(twig_length_filter($this->env, (isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new RuntimeError('Variable "posts" does not exist.', 191, $this->source); })())), 0))) {
+            // line 192
+            echo "                    <p>Najczęściej szukane: #REACT #PHP #PYTHON #FIGMA</p>
+            ";
+        } else {
+            // line 194
+            echo "            <table class=\"table\">
                 <thead>
                 <tr>
                     <th scope=\"col\">#</th>
-                    <th scope=\"col\">Category</th>
-                    <th scope=\"col\">Technology</th>
-                    <th scope=\"col\">Job Time</th>
-                    <th scope=\"col\">Reward</th>
-                    <th scope=\"col\">General goal</th>
-                    <th scope=\"col\">Location</th>
-                    <th scope=\"col\">Details</th>
+                    <th scope=\"col\">Kategoria</th>
+                    <th scope=\"col\">Technologia</th>
+                    <th scope=\"col\">Czas</th>
+                    <th scope=\"col\">Wynagrodzenie</th>
+                    <th scope=\"col\">Zakres</th>
+                    <th scope=\"col\">Miejsce</th>
+                    <th scope=\"col\">Szczegóły</th>
                 </tr>
                 </thead>
                 <tbody>
                 ";
-        // line 273
-        $context["i"] = 0;
-        // line 274
-        echo "                ";
-        if ($this->env->isDebug()) {
-            \Symfony\Component\VarDumper\VarDumper::dump((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new RuntimeError('Variable "posts" does not exist.', 274, $this->source); })()));
         }
-        // line 275
+        // line 209
         echo "                ";
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new RuntimeError('Variable "posts" does not exist.', 275, $this->source); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
-            // line 276
-            echo "                    <tr>
+        $context["i"] = 0;
+        // line 210
+        echo "
+          ";
+        // line 211
+        if ((0 === twig_compare(twig_length_filter($this->env, (isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new RuntimeError('Variable "posts" does not exist.', 211, $this->source); })())), 0))) {
+            // line 212
+            echo "
+              ";
+        } else {
+            // line 214
+            echo "                ";
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new RuntimeError('Variable "posts" does not exist.', 214, $this->source); })()));
+            foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
+                // line 215
+                echo "                    <tr>
                         ";
-            // line 277
-            $context["i"] = ((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 277, $this->source); })()) + 1);
-            // line 278
-            echo "                        <th scope=\"row\">";
-            echo twig_escape_filter($this->env, (isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 278, $this->source); })()), "html", null, true);
-            echo "</th>
+                // line 216
+                $context["i"] = ((isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 216, $this->source); })()) + 1);
+                // line 217
+                echo "                        <th scope=\"row\">";
+                echo twig_escape_filter($this->env, (isset($context["i"]) || array_key_exists("i", $context) ? $context["i"] : (function () { throw new RuntimeError('Variable "i" does not exist.', 217, $this->source); })()), "html", null, true);
+                echo "</th>
                         <td>";
-            // line 279
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "category", [], "any", false, false, false, 279), "html", null, true);
-            echo "</td>
+                // line 218
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "category", [], "any", false, false, false, 218), "html", null, true);
+                echo "</td>
                         <td>";
-            // line 280
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "technology", [], "any", false, false, false, 280), "html", null, true);
-            echo "</td>
+                // line 219
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "technology", [], "any", false, false, false, 219), "html", null, true);
+                echo "</td>
                         <td>";
-            // line 281
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "executionTime", [], "any", false, false, false, 281), "html", null, true);
-            echo " hours</td>
+                // line 220
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "executionTime", [], "any", false, false, false, 220), "html", null, true);
+                echo " hours</td>
                         <td>";
-            // line 282
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "price", [], "any", false, false, false, 282), "html", null, true);
-            echo " PLN</td>
+                // line 221
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "price", [], "any", false, false, false, 221), "html", null, true);
+                echo " PLN</td>
                         <td>";
-            // line 283
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "scope", [], "any", false, false, false, 283), "html", null, true);
-            echo "</td>
+                // line 222
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "scope", [], "any", false, false, false, 222), "html", null, true);
+                echo "</td>
                         <td>Warsaw</td>
                         <td>
                             <a href=\"/detail?id=";
-            // line 286
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "id", [], "any", false, false, false, 286), "html", null, true);
-            echo "\"><button class=\"btn btn-danger\">see details</button><a>
+                // line 225
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["post"], "id", [], "any", false, false, false, 225), "html", null, true);
+                echo "\"><button class=\"btn btn-danger\">szczegóły</button><a>
                         </td>
                     </tr>
                 ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 229
+            echo "                ";
         }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['post'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 290
+        // line 230
         echo "                </tbody>
             </table>
-            <nav aria-label=\"Page navigation example\">
-                <a href=\"/\"><button class=\"btn btn-danger\">Back</button></a>
+            ";
+        // line 232
+        if ((0 === twig_compare(twig_length_filter($this->env, (isset($context["posts"]) || array_key_exists("posts", $context) ? $context["posts"] : (function () { throw new RuntimeError('Variable "posts" does not exist.', 232, $this->source); })())), 0))) {
+            // line 233
+            echo "
+            ";
+        } else {
+            // line 235
+            echo "            <nav aria-label=\"Page navigation example\">
+                <a href=\"/\"><button class=\"btn btn-danger\">Wróć</button></a>
                 <ul class=\"pagination\" style=\"float: right;\">
                     <form action=\"/post-job\" method=\"POST\">
                         <input type=\"hidden\" name=\"search\" value=\"";
-        // line 296
-        echo twig_escape_filter($this->env, (isset($context["search"]) || array_key_exists("search", $context) ? $context["search"] : (function () { throw new RuntimeError('Variable "search" does not exist.', 296, $this->source); })()), "html", null, true);
-        echo "\">
+            // line 239
+            echo twig_escape_filter($this->env, (isset($context["search"]) || array_key_exists("search", $context) ? $context["search"] : (function () { throw new RuntimeError('Variable "search" does not exist.', 239, $this->source); })()), "html", null, true);
+            echo "\">
                         ";
-        // line 297
-        $context["counter"] = 1;
-        // line 298
-        echo "                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"";
-        echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 298, $this->source); })()), "html", null, true);
-        echo "\" type=\"submit\">Previous</button></a>
+            // line 240
+            $context["counter"] = 1;
+            // line 241
+            echo "
+                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"";
+            // line 242
+            echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 242, $this->source); })()), "html", null, true);
+            echo "\" type=\"submit\">Poprzednie</button></a>
                         ";
-        // line 299
-        $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(range((isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 299, $this->source); })()), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new RuntimeError('Variable "page" does not exist.', 299, $this->source); })())));
-        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
-            // line 300
-            echo "                            <a href=\"#\" type=\"submit\"><button class=\"btn btn-light\" name=\"page\" value=\"";
-            echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 300, $this->source); })()), "html", null, true);
-            echo "\" type=\"submit\">";
-            echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 300, $this->source); })()), "html", null, true);
-            echo "</button></a>
+            // line 243
+            $context['_parent'] = $context;
+            $context['_seq'] = twig_ensure_traversable(range((isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 243, $this->source); })()), (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new RuntimeError('Variable "page" does not exist.', 243, $this->source); })())));
+            foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+                // line 244
+                echo "                            <a href=\"#\" type=\"submit\"><button class=\"btn btn-light\" name=\"page\" value=\"";
+                echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 244, $this->source); })()), "html", null, true);
+                echo "\" type=\"submit\">";
+                echo twig_escape_filter($this->env, (isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 244, $this->source); })()), "html", null, true);
+                echo "</button></a>
                             ";
-            // line 301
-            $context["counter"] = ((isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 301, $this->source); })()) + 1);
-            // line 302
-            echo "                        ";
-        }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 303
-        echo "                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"";
-        echo twig_escape_filter($this->env, (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new RuntimeError('Variable "page" does not exist.', 303, $this->source); })()), "html", null, true);
-        echo "\" type=\"submit\">Next</button></a>
+                // line 245
+                $context["counter"] = ((isset($context["counter"]) || array_key_exists("counter", $context) ? $context["counter"] : (function () { throw new RuntimeError('Variable "counter" does not exist.', 245, $this->source); })()) + 1);
+                // line 246
+                echo "                        ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 247
+            echo "
+                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"";
+            // line 248
+            echo twig_escape_filter($this->env, (isset($context["page"]) || array_key_exists("page", $context) ? $context["page"] : (function () { throw new RuntimeError('Variable "page" does not exist.', 248, $this->source); })()), "html", null, true);
+            echo "\" type=\"submit\">Kolejne</button></a>
                     </form>
                 </ul>
             </nav>
-            <div class=\"row\">
+            ";
+        }
+        // line 253
+        echo "            <div class=\"row\">
 
             </div><!-- Title row end -->
 
         </div><!--/ Container end -->
     </section><!--/ Service box end -->
 
-    <!-- Portfolio start -->
-    <section id=\"portfolio\" class=\"portfolio\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon classic pull-left\"><i class=\"fa fa-suitcase\"></i></span>
-                    <h2 class=\"title classic\">Przykłady realizacji</h2>
-                </div>
-            </div> <!-- Title row end -->
-
-            <!--Isotope filter start -->
-            <div class=\"row text-right\">
-                <div class=\"isotope-nav\" data-isotope-nav=\"isotope\">
-                    <ul>
-                        <li><a href=\"#\" class=\"active\" data-filter=\"*\">Wszystkie</a></li>
-                        <li><a href=\"#\" data-filter=\".web-design\">Aplikacje internetowe</a></li>
-                        <li><a href=\"#\" data-filter=\".development\">Design</a></li>
-                        <li><a href=\"#\" data-filter=\".joomla\">Konsulting</a></li>
-                        <li><a href=\"#\" data-filter=\".wordpress\">Sprzęt komputerowy</a></li>
-                    </ul>
-                </div>
-            </div><!-- Isotope filter end -->
-        </div>
-
-        <div class=\"container-fluid\">
-            <div class=\"row\">
-                <div id=\"isotope\" class=\"isotope\">
-                    <div class=\"col-sm-3 web-design isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio1.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Startup Business</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg1.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio2.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Easy to Lanunch</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg2.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 joomla isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio3.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Your Business</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg3.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 wordpress isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio4.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Prego Match</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg4.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 joomla isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio5.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Fashion Brand</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg5.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio6.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>The Insidage</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg1.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio7.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Light Carpet</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg2.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio8.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Amazing Keyboard</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg3.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-                </div><!-- Isotope content end -->
-            </div><!-- Content row end -->
-        </div><!-- Container end -->
-    </section><!-- Portfolio end -->
-
-    <!-- Counter Strat -->
-    <section class=\"ts_counter no-padding\">
-        <div class=\"container-fluid\">
-            <div class=\"row facts-wrapper wow fadeInLeft text-center\">
-                <div class=\"facts one col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-user\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">1200</span>
-                    </div>
-                    <h3>Klientów</h3>
-                </div>
-
-                <div class=\"facts two col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-institution\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">1277</span>
-                    </div>
-                    <h3>Rozwiązanych problemów IT</h3>
-                </div>
-
-                <div class=\"facts three col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-suitcase\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">869</span>
-                    </div>
-                    <h3>Zrealizowanych projektów</h3>
-                </div>
-
-                <div class=\"facts four col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-trophy\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">76</span>
-                    </div>
-                    <h3>Opinie zadowolonych ludzi</h3>
-                </div>
-
-            </div>
-        </div><!--/ Container end -->
-    </section><!--/ Counter end -->
-
-    <!-- Feature box start -->
-    <section id=\"feature\" class=\"feature\">
-        <div class=\"container\">
-            <div class=\"row\">
-                ";
-        // line 494
-        echo "                ";
-        // line 495
-        echo "                ";
-        // line 496
-        echo "                ";
-        // line 497
-        echo "                ";
-        // line 498
-        echo "                ";
-        // line 499
-        echo "                ";
-        // line 500
-        echo "
-                ";
-        // line 502
-        echo "                ";
-        // line 503
-        echo "                ";
-        // line 504
-        echo "                ";
-        // line 505
-        echo "                ";
-        // line 506
-        echo "                ";
-        // line 507
-        echo "                ";
-        // line 508
-        echo "
-                ";
-        // line 510
-        echo "                ";
-        // line 511
-        echo "                ";
-        // line 512
-        echo "                ";
-        // line 513
-        echo "                ";
-        // line 514
-        echo "                ";
-        // line 515
-        echo "                ";
-        // line 516
-        echo "            </div><!-- Content row end -->
-
-            <div class=\"gap-40\"></div>
-
-            <div class=\"row\">
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-newspaper-o\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Branża IT</h3>
-                        <p>Eksperci w branży it. Nie robimy wszystkiego i niczego.</p>
-                    </div>
-                </div><!--/ End 1st featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-desktop\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Dopasowanie</h3>
-                        <p>Konketnie pod Twoje potrzeby.</p>
-                    </div>
-                </div><!--/ End 2nd featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-pagelines\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Lekkość i szybkość realizacji.</h3>
-                        <p>Szybki czas reakcji. Ty się zrelaksuj.</p>
-                    </div>
-                </div><!--/ End 3rd featurebox -->
-
-            </div><!-- Content row end -->
-
-            <div class=\"gap-40\"></div>
-
-            <div class=\"row\">
 
 
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Jakość</h3>
-                        <p>Dobrze zrobiona robota.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-whatsapp\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>24/7 Wsparcie</h3>
-                        <p>Jeśli masz jakąś wątpliwość bądz chcesz zobaczyc status realizacji.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-            </div><!-- Content row end -->
-
-        </div><!--/ Container end -->
-    </section><!--/ Feature box end -->
-
-
-    <section id=\"image-block\" class=\"image-block no-padding\">
-        <div class=\"container-fluid\">
-            <div class=\"row\">
-                <div class=\"col-md-6 ts-padding\" style=\"height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;\">
-                </div>
-                <div class=\"col-md-6 ts-padding img-block-right\">
-                    <div class=\"img-block-head text-center\">
-                        <h2>Dowiedz się więcej o NAS</h2>
-                        <h3>Czemu warto nas wybrać?</h3>
-                        <p>Jesteśmy 100 % polską firmą z polskim kapitałem. Wspieramy naszych. Opieramy się na zaufaniu i dbaniu o naszego klienta. Zawsze gramy uczciwie.
-                        </p>
-                    </div>
-
-                    <div class=\"gap-30\"></div>
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-bicycle\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Masa ekspertów IT</h3>
-                            <p>Do wyboru do koloru, gotowi aby Ci pomóc w mgnieniu oka. Zapomnij o marazmie.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Jakość</h3>
-                            <p>Płacisz zawsze za jakość i dobrze zrobioną robotę. Zwrot kosztów w przypadku braku satysfakcjii z usługi</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-street-view\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Ciągle wsparcie klienta</h3>
-                            <p>Dzwonisz kiedy chcesz i pomagamy odrazu. Miło i przyjacielsko.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                </div>
-            </div>
-        </div>
-    </section><!--/ Image block end -->
-
-
-    <!-- Team start -->
-    <section id=\"team\" class=\"team\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon pull-left\"><i class=\"fa fa-weixin\"></i></span>
-                    <h2 class=\"title\">Poznaj założycieli naszej firmy<span class=\"title-desc\">Byli managerowie i eksperci w branzy IT.</span></h2>
-                </div>
-            </div><!-- Title row end -->
-
-            <div class=\"row text-center\">
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/foto4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Hubert</h3>
-                            <p>czlonek zarządu / rozwój biznesu</p>
-                            <p>Przez wiele lat pracował jako programista dla największych światowych korporacji. Zawsze marzył robić coś dla Polski i udało się.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 1 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/team/team2.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Paweł</h3>
-                            <p>członek zarządu / rozwój biznesu</p>
-                            <p>Pracował wiele lat jako adwokat. Nietuzinkowy, nieszablonowy, profesjonalny w każdym calu.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 2 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team3.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Malgorzata</h3>
-                            <p>wizerunek / media</p>
-                            <p>Małgorzata pracowała jako dziennikarka w mediach wspierających Polske i Polskość.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 3 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team animate wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Tomasz</h3>
-                            <p>marketing internetowy / social media</p>
-                            <p>Specjalista od marketingu produktów i rozwoju social mediów. Bez niego nie usłyszelibyście o nas.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 4 end -->
-            </div><!--/ Content row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Team end -->
-
-    <!-- Parallax 1 start -->
-    <section class=\"parallax parallax1\">
-        <div class=\"parallax-overlay\"></div>
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 text-center\">
-                    <h2>Wejdź na wyższy level zleceń IT!</h2>
-                    <h3>Zacznij teraz.</h3>
-                    <p>
-                        <a href=\"#\" class=\"btn btn-primary white\">Podejmij zlecenie</a>
-                        <a href=\"#\" class=\"btn btn-primary solid\">Zaoferuj zlecenie</a>
-                    </p>
-                </div>
-            </div>
-        </div><!-- Container end -->
-    </section><!-- Parallax 1 end -->
-
-    <!-- Pricing table start -->
-    <section id=\"pricing\" class=\"pricing\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon pull-left\"><i class=\"fa fa-university\"></i></span>
-                    <h2 class=\"title\">Nasz cennik<span class=\"title-desc\">Pomaganie ludziom to nasza pasja i misja.</span></h2>
-                </div>
-            </div><!-- Title row end -->
-            <div class=\"row\">
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\".5s\">
-                    <div class=\"plan text-center\">
-                        <span class=\"plan-name\">Darmowy</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>0</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
-                            <li>wsparcie 12/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">Wybróbuj za darmo</a>
-                    </div>
-                </div><!-- plan end -->
-
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"1s\">
-                    <div class=\"plan text-center\">
-                        <span class=\"plan-name\">Standardowy</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>25</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
-                            <li>wsparcie 12/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
-                    </div>
-                </div><!-- plan end -->
-
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"1.4s\">
-                    <div class=\"plan text-center featured\">
-                        <span class=\"plan-name\">Luksusowy</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>50</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>2 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
-                            <li>wsparcie 24/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
-                    </div>
-                </div><!-- plan end -->
-
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"1.6s\">
-                    <div class=\"plan text-center\">
-                        <span class=\"plan-name\">Królewski</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>100</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>3 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
-                            <li>rozmowa z ekspertem</li>
-                            <li>wsparcie 24/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
-                    </div>
-                </div><!-- plan end -->
-            </div><!--/ Content row end -->
-        </div><!--/  Container end-->
-    </section><!--/ Pricing table end -->
-
-
-    <!-- Testimonial start-->
-    <section class=\"testimonial parallax parallax2\">
-        <div class=\"parallax-overlay\"></div>
-        <div class=\"container\">
-            <div class=\"row\">
-                <div id=\"testimonial-carousel\" class=\"owl-carousel owl-theme text-center testimonial-slide\">
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial1.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Polisoft to rewolucja w branży IT. Wreszcie cos Polskiego, dla nas dla prawdziwych patriotów.
-                            </p>
-                            <h3 class=\"name\">Karolina Pajączkowska<span>Magazyn komputerowy SPIDER WEB</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial2.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Narek Bedros<span>Sr. Manager</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial3.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Taline Lucine<span>Sales Manager</span></h3>
-                        </div>
-                    </div>
-                </div><!--/ Testimonial carousel end-->
-            </div><!--/ Row end-->
-        </div><!--/  Container end-->
-    </section><!--/ Testimonial end-->
-
-
-    <!-- Clients start -->
-    <section id=\"clients\" class=\"clients\">
-        <div class=\"container\">
-            <div class=\"row wow fadeInLeft\">
-                <div id=\"client-carousel\" class=\"col-sm-12 owl-carousel owl-theme text-center client-carousel\">
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client1.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client2.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client3.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client4.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client5.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client6.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client7.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client8.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                </div><!-- Owl carousel end -->
-            </div><!-- Main row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Clients end -->
 
 
     <!-- Footer start -->
@@ -1255,7 +593,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
 
     public function getDebugInfo()
     {
-        return array (  667 => 516,  665 => 515,  663 => 514,  661 => 513,  659 => 512,  657 => 511,  655 => 510,  652 => 508,  650 => 507,  648 => 506,  646 => 505,  644 => 504,  642 => 503,  640 => 502,  637 => 500,  635 => 499,  633 => 498,  631 => 497,  629 => 496,  627 => 495,  625 => 494,  431 => 303,  425 => 302,  423 => 301,  416 => 300,  412 => 299,  407 => 298,  405 => 297,  401 => 296,  393 => 290,  383 => 286,  377 => 283,  373 => 282,  369 => 281,  365 => 280,  361 => 279,  356 => 278,  354 => 277,  351 => 276,  346 => 275,  341 => 274,  339 => 273,  230 => 166,  228 => 165,  226 => 164,  224 => 163,  222 => 162,  220 => 161,  218 => 160,  216 => 159,  214 => 158,  203 => 148,  201 => 147,  199 => 146,  197 => 145,  195 => 144,  193 => 143,  191 => 142,  189 => 141,  187 => 140,  185 => 139,  183 => 138,  181 => 137,  179 => 136,  43 => 1,);
+        return array (  379 => 253,  371 => 248,  368 => 247,  362 => 246,  360 => 245,  353 => 244,  349 => 243,  345 => 242,  342 => 241,  340 => 240,  336 => 239,  330 => 235,  326 => 233,  324 => 232,  320 => 230,  317 => 229,  307 => 225,  301 => 222,  297 => 221,  293 => 220,  289 => 219,  285 => 218,  280 => 217,  278 => 216,  275 => 215,  270 => 214,  266 => 212,  264 => 211,  261 => 210,  258 => 209,  241 => 194,  237 => 192,  235 => 191,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -1359,75 +697,7 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
                         </a>
                     </div>
                 </div><!--/ Logo end -->
-                <nav class=\"collapse navbar-collapse clearfix\" role=\"navigation\">
-                    <ul class=\"nav navbar-nav navbar-right\">
-                        <li class=\"dropdown active\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Glówna <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li class=\"active\"><a href=\"/index.html\">Home 1</a></li>
-                                    <li><a href=\"/index-2.html\">Home 2</a></li>
-                                    <li><a href=\"/index-3.html\">Home 3</a></li>
-                                    <li><a href=\"/index-4.html\">Home 4</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Firma<i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/about.html\">About Us</a></li>
-                                    <li><a href=\"/service.html\">Services</a></li>
-                                    <li><a href=\"/career.html\">Career</a></li>
-                                    <li><a href=\"/testimonial.html\">Testimonials</a></li>
-                                    <li><a href=\"/faq.html\">Faq</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Portfolio <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/portfolio-classic.html\">Portfolio Classic</a></li>
-                                    <li><a href=\"/portfolio-static.html\">Portfolio Static</a></li>
-                                    <li><a href=\"/portfolio-item.html\">Portfolio Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        {#                        <li class=\"dropdown\">#}
-                        {#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Pages <i class=\"fa fa-angle-down\"></i></a>#}
-                        {#                            <div class=\"dropdown-menu\">#}
-                        {#                                <ul>#}
-                        {#                                    <li><a href=\"/team.html\">Our Team</a></li>#}
-                        {#                                    <li><a href=\"/about2.html\">About Us - 2</a></li>#}
-                        {#                                    <li><a href=\"/service2.html\">Services - 2</a></li>#}
-                        {#                                    <li><a href=\"/service-single.html\">Services Single</a></li>#}
-                        {#                                    <li><a href=\"/pricing.html\">Pricing Table</a></li>#}
-                        {#                                    <li><a href=\"/404.html\">404 Page</a></li>#}
-                        {#                                </ul>#}
-                        {#                            </div>#}
-                        {#                        </li>#}
-                        <li class=\"dropdown\">
-                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Blog <i class=\"fa fa-angle-down\"></i></a>
-                            <div class=\"dropdown-menu\">
-                                <ul>
-                                    <li><a href=\"/blog-rightside.html\">Blog with Sidebar</a></li>
-                                    <li><a href=\"/blog-item.html\">Blog Single</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        {#                        <li class=\"dropdown\">#}
-                        {#                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Features <i class=\"fa fa-angle-down\"></i></a>#}
-                        {#                            <div class=\"dropdown-menu\">#}
-                        {#                                <ul>#}
-                        {#                                    <li><a href=\"/typography.html\">Typography</a></li>#}
-                        {#                                    <li><a href=\"/elements.html\">Elements</a></li>#}
-                        {#                                </ul>#}
-                        {#                            </div>#}
-                        {#                        </li>#}
-                        <li><a href=\"/contact.html\">Kontakt</a></li>
-                    </ul>
-                </nav><!--/ Navigation end -->
+
             </div><!--/ Row end -->
         </div><!--/ Container end -->
     </header><!--/ Header end -->
@@ -1518,22 +788,29 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
     <!-- Service box start -->
     <section id=\"service\" class=\"service angle\">
         <div class=\"container\">
+            {%  if posts | length == 0 %}
+                    <p>Najczęściej szukane: #REACT #PHP #PYTHON #FIGMA</p>
+            {% else %}
             <table class=\"table\">
                 <thead>
                 <tr>
                     <th scope=\"col\">#</th>
-                    <th scope=\"col\">Category</th>
-                    <th scope=\"col\">Technology</th>
-                    <th scope=\"col\">Job Time</th>
-                    <th scope=\"col\">Reward</th>
-                    <th scope=\"col\">General goal</th>
-                    <th scope=\"col\">Location</th>
-                    <th scope=\"col\">Details</th>
+                    <th scope=\"col\">Kategoria</th>
+                    <th scope=\"col\">Technologia</th>
+                    <th scope=\"col\">Czas</th>
+                    <th scope=\"col\">Wynagrodzenie</th>
+                    <th scope=\"col\">Zakres</th>
+                    <th scope=\"col\">Miejsce</th>
+                    <th scope=\"col\">Szczegóły</th>
                 </tr>
                 </thead>
                 <tbody>
+                {% endif %}
                 {% set i = 0 %}
-                {% dump(posts) %}
+
+          {%  if posts | length == 0 %}
+
+              {% else %}
                 {% for post in posts %}
                     <tr>
                         {% set i = i + 1 %}
@@ -1545,27 +822,34 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
                         <td>{{ post.scope }}</td>
                         <td>Warsaw</td>
                         <td>
-                            <a href=\"/detail?id={{ post.id }}\"><button class=\"btn btn-danger\">see details</button><a>
+                            <a href=\"/detail?id={{ post.id }}\"><button class=\"btn btn-danger\">szczegóły</button><a>
                         </td>
                     </tr>
                 {% endfor %}
+                {% endif %}
                 </tbody>
             </table>
+            {%  if posts | length == 0 %}
+
+            {% else %}
             <nav aria-label=\"Page navigation example\">
-                <a href=\"/\"><button class=\"btn btn-danger\">Back</button></a>
+                <a href=\"/\"><button class=\"btn btn-danger\">Wróć</button></a>
                 <ul class=\"pagination\" style=\"float: right;\">
                     <form action=\"/post-job\" method=\"POST\">
                         <input type=\"hidden\" name=\"search\" value=\"{{ search }}\">
                         {% set counter = 1 %}
-                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"{{ counter }}\" type=\"submit\">Previous</button></a>
+
+                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"{{ counter }}\" type=\"submit\">Poprzednie</button></a>
                         {% for p in counter..page %}
                             <a href=\"#\" type=\"submit\"><button class=\"btn btn-light\" name=\"page\" value=\"{{ counter }}\" type=\"submit\">{{ counter }}</button></a>
                             {% set counter = counter + 1 %}
                         {% endfor %}
-                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"{{ page }}\" type=\"submit\">Next</button></a>
+
+                        <a href=\"#\" type=\"submit\"><button class=\"btn btn-danger\" name=\"page\" value=\"{{ page }}\" type=\"submit\">Kolejne</button></a>
                     </form>
                 </ul>
             </nav>
+            {% endif %}
             <div class=\"row\">
 
             </div><!-- Title row end -->
@@ -1573,591 +857,8 @@ class __TwigTemplate_794eb0a04533ce0182fa7e2fe5ee343690640f5c5f0ee44aac8b3d1a4ef
         </div><!--/ Container end -->
     </section><!--/ Service box end -->
 
-    <!-- Portfolio start -->
-    <section id=\"portfolio\" class=\"portfolio\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon classic pull-left\"><i class=\"fa fa-suitcase\"></i></span>
-                    <h2 class=\"title classic\">Przykłady realizacji</h2>
-                </div>
-            </div> <!-- Title row end -->
-
-            <!--Isotope filter start -->
-            <div class=\"row text-right\">
-                <div class=\"isotope-nav\" data-isotope-nav=\"isotope\">
-                    <ul>
-                        <li><a href=\"#\" class=\"active\" data-filter=\"*\">Wszystkie</a></li>
-                        <li><a href=\"#\" data-filter=\".web-design\">Aplikacje internetowe</a></li>
-                        <li><a href=\"#\" data-filter=\".development\">Design</a></li>
-                        <li><a href=\"#\" data-filter=\".joomla\">Konsulting</a></li>
-                        <li><a href=\"#\" data-filter=\".wordpress\">Sprzęt komputerowy</a></li>
-                    </ul>
-                </div>
-            </div><!-- Isotope filter end -->
-        </div>
-
-        <div class=\"container-fluid\">
-            <div class=\"row\">
-                <div id=\"isotope\" class=\"isotope\">
-                    <div class=\"col-sm-3 web-design isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio1.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Startup Business</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg1.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio2.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Easy to Lanunch</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg2.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 joomla isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio3.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Your Business</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg3.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 wordpress isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio4.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Prego Match</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg4.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 joomla isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"images/portfolio/portfolio5.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Fashion Brand</h3>
-                                    <a class=\"link icon-pentagon\" href=\"portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"images/portfolio/portfolio-bg5.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio6.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>The Insidage</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg1.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio7.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Light Carpet</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg2.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-
-                    <div class=\"col-sm-3 development isotope-item\">
-                        <div class=\"grid\">
-                            <figure class=\"effect-oscar\">
-                                <img src=\"/images/portfolio/portfolio8.jpg\" alt=\"\">
-                                <figcaption>
-                                    <h3>Amazing Keyboard</h3>
-                                    <a class=\"link icon-pentagon\" href=\"/portfolio-item.html\"><i class=\"fa fa-link\"></i></a>
-                                    <a class=\"view icon-pentagon\" data-rel=\"prettyPhoto\" href=\"/images/portfolio/portfolio-bg3.jpg\"><i class=\"fa fa-search\"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div><!-- Isotope item end -->
-                </div><!-- Isotope content end -->
-            </div><!-- Content row end -->
-        </div><!-- Container end -->
-    </section><!-- Portfolio end -->
-
-    <!-- Counter Strat -->
-    <section class=\"ts_counter no-padding\">
-        <div class=\"container-fluid\">
-            <div class=\"row facts-wrapper wow fadeInLeft text-center\">
-                <div class=\"facts one col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-user\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">1200</span>
-                    </div>
-                    <h3>Klientów</h3>
-                </div>
-
-                <div class=\"facts two col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-institution\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">1277</span>
-                    </div>
-                    <h3>Rozwiązanych problemów IT</h3>
-                </div>
-
-                <div class=\"facts three col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-suitcase\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">869</span>
-                    </div>
-                    <h3>Zrealizowanych projektów</h3>
-                </div>
-
-                <div class=\"facts four col-md-3 col-sm-6\">
-                    <span class=\"facts-icon\"><i class=\"fa fa-trophy\"></i></span>
-                    <div class=\"facts-num\">
-                        <span class=\"counter\">76</span>
-                    </div>
-                    <h3>Opinie zadowolonych ludzi</h3>
-                </div>
-
-            </div>
-        </div><!--/ Container end -->
-    </section><!--/ Counter end -->
-
-    <!-- Feature box start -->
-    <section id=\"feature\" class=\"feature\">
-        <div class=\"container\">
-            <div class=\"row\">
-                {#                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">#}
-                {#                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-heart-o\"></i></span>#}
-                {#                    <div class=\"feature-content\">#}
-                {#                        <h3>Clean &amp; Modern Design</h3>#}
-                {#                        <p>Bras urna felis accumsan at ultrde cesid posuere masa socis nautoque penat</p>#}
-                {#                    </div>#}
-                {#                </div><!--/ End first featurebox -->#}
-
-                {#                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">#}
-                {#                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-codepen\"></i></span>#}
-                {#                    <div class=\"feature-content\">#}
-                {#                        <h3>Useful Shortcodes</h3>#}
-                {#                        <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua</p>#}
-                {#                    </div>#}
-                {#                </div><!--/ End 2nd featurebox -->#}
-
-                {#                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">#}
-                {#                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-film\"></i></span>#}
-                {#                    <div class=\"feature-content\">#}
-                {#                        <h3>Parallax Section</h3>#}
-                {#                        <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>#}
-                {#                    </div>#}
-                {#                </div><!--/ End 3rd featurebox -->#}
-            </div><!-- Content row end -->
-
-            <div class=\"gap-40\"></div>
-
-            <div class=\"row\">
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-newspaper-o\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Branża IT</h3>
-                        <p>Eksperci w branży it. Nie robimy wszystkiego i niczego.</p>
-                    </div>
-                </div><!--/ End 1st featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-desktop\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Dopasowanie</h3>
-                        <p>Konketnie pod Twoje potrzeby.</p>
-                    </div>
-                </div><!--/ End 2nd featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-pagelines\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Lekkość i szybkość realizacji.</h3>
-                        <p>Szybki czas reakcji. Ty się zrelaksuj.</p>
-                    </div>
-                </div><!--/ End 3rd featurebox -->
-
-            </div><!-- Content row end -->
-
-            <div class=\"gap-40\"></div>
-
-            <div class=\"row\">
 
 
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>Jakość</h3>
-                        <p>Dobrze zrobiona robota.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-
-                <div class=\"feature-box col-sm-4 wow fadeInDown\" data-wow-delay=\".5s\">
-                    <span class=\"feature-icon pull-left\" ><i class=\"fa fa-whatsapp\"></i></span>
-                    <div class=\"feature-content\">
-                        <h3>24/7 Wsparcie</h3>
-                        <p>Jeśli masz jakąś wątpliwość bądz chcesz zobaczyc status realizacji.</p>
-                    </div>
-                </div><!--/ End first featurebox -->
-            </div><!-- Content row end -->
-
-        </div><!--/ Container end -->
-    </section><!--/ Feature box end -->
-
-
-    <section id=\"image-block\" class=\"image-block no-padding\">
-        <div class=\"container-fluid\">
-            <div class=\"row\">
-                <div class=\"col-md-6 ts-padding\" style=\"height:650px;background:url(images/image-block-bg.jpg) 50% 50% / cover no-repeat;\">
-                </div>
-                <div class=\"col-md-6 ts-padding img-block-right\">
-                    <div class=\"img-block-head text-center\">
-                        <h2>Dowiedz się więcej o NAS</h2>
-                        <h3>Czemu warto nas wybrać?</h3>
-                        <p>Jesteśmy 100 % polską firmą z polskim kapitałem. Wspieramy naszych. Opieramy się na zaufaniu i dbaniu o naszego klienta. Zawsze gramy uczciwie.
-                        </p>
-                    </div>
-
-                    <div class=\"gap-30\"></div>
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-bicycle\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Masa ekspertów IT</h3>
-                            <p>Do wyboru do koloru, gotowi aby Ci pomóc w mgnieniu oka. Zapomnij o marazmie.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-diamond\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Jakość</h3>
-                            <p>Płacisz zawsze za jakość i dobrze zrobioną robotę. Zwrot kosztów w przypadku braku satysfakcjii z usługi</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                    <div class=\"image-block-content\">
-                        <span class=\"feature-icon pull-left\" ><i class=\"fa fa-street-view\"></i></span>
-                        <div class=\"feature-content\">
-                            <h3>Ciągle wsparcie klienta</h3>
-                            <p>Dzwonisz kiedy chcesz i pomagamy odrazu. Miło i przyjacielsko.</p>
-                        </div>
-                    </div><!--/ End 1st block -->
-
-                </div>
-            </div>
-        </div>
-    </section><!--/ Image block end -->
-
-
-    <!-- Team start -->
-    <section id=\"team\" class=\"team\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon pull-left\"><i class=\"fa fa-weixin\"></i></span>
-                    <h2 class=\"title\">Poznaj założycieli naszej firmy<span class=\"title-desc\">Byli managerowie i eksperci w branzy IT.</span></h2>
-                </div>
-            </div><!-- Title row end -->
-
-            <div class=\"row text-center\">
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/foto4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Hubert</h3>
-                            <p>czlonek zarządu / rozwój biznesu</p>
-                            <p>Przez wiele lat pracował jako programista dla największych światowych korporacji. Zawsze marzył robić coś dla Polski i udało się.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 1 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInLeft\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"/images/team/team2.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Paweł</h3>
-                            <p>członek zarządu / rozwój biznesu</p>
-                            <p>Pracował wiele lat jako adwokat. Nietuzinkowy, nieszablonowy, profesjonalny w każdym calu.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 2 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team3.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Malgorzata</h3>
-                            <p>wizerunek / media</p>
-                            <p>Małgorzata pracowała jako dziennikarka w mediach wspierających Polske i Polskość.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 3 end -->
-                <div class=\"col-md-3 col-sm-6\">
-                    <div class=\"team animate wow slideInRight\">
-                        <div class=\"img-hexagon\">
-                            <img src=\"images/team/team4.jpg\" alt=\"\">
-                            <span class=\"img-top\"></span>
-                            <span class=\"img-bottom\"></span>
-                        </div>
-                        <div class=\"team-content\">
-                            <h3>Tomasz</h3>
-                            <p>marketing internetowy / social media</p>
-                            <p>Specjalista od marketingu produktów i rozwoju social mediów. Bez niego nie usłyszelibyście o nas.</p>
-                            <div class=\"team-social\">
-                                <a class=\"fb\" href=\"#\"><i class=\"fa fa-facebook\"></i></a>
-                                <a class=\"twt\" href=\"#\"><i class=\"fa fa-twitter\"></i></a>
-                                <a class=\"gplus\" href=\"#\"><i class=\"fa fa-google-plus\"></i></a>
-                                <a class=\"linkdin\" href=\"#\"><i class=\"fa fa-linkedin\"></i></a>
-                                <a class=\"dribble\" href=\"#\"><i class=\"fa fa-dribbble\"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/ Team 4 end -->
-            </div><!--/ Content row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Team end -->
-
-    <!-- Parallax 1 start -->
-    <section class=\"parallax parallax1\">
-        <div class=\"parallax-overlay\"></div>
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 text-center\">
-                    <h2>Wejdź na wyższy level zleceń IT!</h2>
-                    <h3>Zacznij teraz.</h3>
-                    <p>
-                        <a href=\"#\" class=\"btn btn-primary white\">Podejmij zlecenie</a>
-                        <a href=\"#\" class=\"btn btn-primary solid\">Zaoferuj zlecenie</a>
-                    </p>
-                </div>
-            </div>
-        </div><!-- Container end -->
-    </section><!-- Parallax 1 end -->
-
-    <!-- Pricing table start -->
-    <section id=\"pricing\" class=\"pricing\">
-        <div class=\"container\">
-            <div class=\"row\">
-                <div class=\"col-md-12 heading\">
-                    <span class=\"title-icon pull-left\"><i class=\"fa fa-university\"></i></span>
-                    <h2 class=\"title\">Nasz cennik<span class=\"title-desc\">Pomaganie ludziom to nasza pasja i misja.</span></h2>
-                </div>
-            </div><!-- Title row end -->
-            <div class=\"row\">
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\".5s\">
-                    <div class=\"plan text-center\">
-                        <span class=\"plan-name\">Darmowy</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>0</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
-                            <li>wsparcie 12/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">Wybróbuj za darmo</a>
-                    </div>
-                </div><!-- plan end -->
-
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"1s\">
-                    <div class=\"plan text-center\">
-                        <span class=\"plan-name\">Standardowy</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>25</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>1 problem do rozwiązania</li>
-                            <li>szybka realizacja</li>
-                            <li>wsparcie 12/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
-                    </div>
-                </div><!-- plan end -->
-
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"1.4s\">
-                    <div class=\"plan text-center featured\">
-                        <span class=\"plan-name\">Luksusowy</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>50</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>2 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
-                            <li>wsparcie 24/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
-                    </div>
-                </div><!-- plan end -->
-
-                <!-- plan start -->
-                <div class=\"col-md-3 col-sm-6 wow fadeInUp\" data-wow-delay=\"1.6s\">
-                    <div class=\"plan text-center\">
-                        <span class=\"plan-name\">Królewski</span>
-                        <p class=\"plan-price\"><sup class=\"currency\">PLN</sup><strong>100</strong><sub>.00</sub></p>
-                        <ul class=\"list-unstyled\">
-                            <li>3 problemy do rozwiązania</li>
-                            <li>ultra szybka realizacja</li>
-                            <li>rozmowa z ekspertem</li>
-                            <li>wsparcie 24/7</li>
-                        </ul>
-                        <a class=\"btn btn-primary\" href=\"#.\">KUP</a>
-                    </div>
-                </div><!-- plan end -->
-            </div><!--/ Content row end -->
-        </div><!--/  Container end-->
-    </section><!--/ Pricing table end -->
-
-
-    <!-- Testimonial start-->
-    <section class=\"testimonial parallax parallax2\">
-        <div class=\"parallax-overlay\"></div>
-        <div class=\"container\">
-            <div class=\"row\">
-                <div id=\"testimonial-carousel\" class=\"owl-carousel owl-theme text-center testimonial-slide\">
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial1.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Polisoft to rewolucja w branży IT. Wreszcie cos Polskiego, dla nas dla prawdziwych patriotów.
-                            </p>
-                            <h3 class=\"name\">Karolina Pajączkowska<span>Magazyn komputerowy SPIDER WEB</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial2.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Narek Bedros<span>Sr. Manager</span></h3>
-                        </div>
-                    </div>
-                    <div class=\"item\">
-                        <div class=\"testimonial-thumb\">
-                            <img src=\"/images/team/testimonial3.jpg\" alt=\"testimonial\">
-                        </div>
-                        <div class=\"testimonial-content\">
-                            <p class=\"testimonial-text\">
-                                Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to using.
-                            </p>
-                            <h3 class=\"name\">Taline Lucine<span>Sales Manager</span></h3>
-                        </div>
-                    </div>
-                </div><!--/ Testimonial carousel end-->
-            </div><!--/ Row end-->
-        </div><!--/  Container end-->
-    </section><!--/ Testimonial end-->
-
-
-    <!-- Clients start -->
-    <section id=\"clients\" class=\"clients\">
-        <div class=\"container\">
-            <div class=\"row wow fadeInLeft\">
-                <div id=\"client-carousel\" class=\"col-sm-12 owl-carousel owl-theme text-center client-carousel\">
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client1.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client2.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client3.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client4.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client5.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client6.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client7.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                    <figure class=\"item client_logo\">
-                        <a href=\"#\">
-                            <img src=\"/images/clients/client8.png\" alt=\"client\">
-                        </a>
-                    </figure>
-                </div><!-- Owl carousel end -->
-            </div><!-- Main row end -->
-        </div><!--/ Container end -->
-    </section><!--/ Clients end -->
 
 
     <!-- Footer start -->
