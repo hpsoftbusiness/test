@@ -244,8 +244,8 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
                         <input type=\"text\" class=\"form-control\"  style=\"color: grey;\"  id=\"email\" placeholder=\"\">
                     </div>
                     <div class=\"form-group\">
-                        <label for=\"exampleFormControlInput1\">Telefon</label>
-                        <input type=\"text\" class=\"form-control\"  style=\"color: grey;\" id=\"phone\" placeholder=\"\">
+                        <label for=\"exampleFormControlInput1\">Telefon (np. 48603203021)</label>
+                        <input type=\"number\"  oninput=\"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*?)\\..*/g, '\$1');\" class=\"form-control\"  style=\"color: grey;\" id=\"phone\" placeholder=\"\">
                     </div>
 
 
@@ -760,8 +760,8 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
                         <input type=\"text\" class=\"form-control\"  style=\"color: grey;\"  id=\"email\" placeholder=\"\">
                     </div>
                     <div class=\"form-group\">
-                        <label for=\"exampleFormControlInput1\">Telefon</label>
-                        <input type=\"text\" class=\"form-control\"  style=\"color: grey;\" id=\"phone\" placeholder=\"\">
+                        <label for=\"exampleFormControlInput1\">Telefon (np. 48603203021)</label>
+                        <input type=\"number\"  oninput=\"this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\\..*?)\\..*/g, '\$1');\" class=\"form-control\"  style=\"color: grey;\" id=\"phone\" placeholder=\"\">
                     </div>
 
 
