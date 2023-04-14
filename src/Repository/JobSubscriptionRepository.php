@@ -43,12 +43,8 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         }
     }
 
-    /**
-     * @param int $jobPost
-     *
-     * @return string
-     */
-    public function subscribeForJob(int $jobPost, $name, $email, $phone)
+
+    public function subscribeForJob($jobPost, $name, $email, $phone, JobPostRepository $jobPostRepository)
     {
         $jobSubscription = new JobSubscription();
         $jobSubscription->setJobPostId($jobPost);
@@ -60,6 +56,13 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         $jobSubscription->setTime($now);
 
         $this->getEntityManager()->persist($jobSubscription);
+        $this->getEntityManager()->flush();
+
+        $found = $jobPostRepository->findOneBy(['id' => $jobPost]);
+        $found->setReservation(1);
+
+
+        $this->getEntityManager()->persist($found);
         $this->getEntityManager()->flush();
 
         return 'true';

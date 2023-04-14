@@ -160,5 +160,26 @@ class JobPost
     }
 
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $reservation;
+
+    /**
+     * @return mixed
+     */
+    public function getReservation()
+    {
+        return $this->reservation;
+    }
+
+    /**
+     * @param mixed $reservation
+     */
+    public function setReservation($reservation): void
+    {
+        $this->reservation = $reservation;
+    }
+
 
 }

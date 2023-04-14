@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class MailController extends AbstractController
 {
-    public function mailConfirmationWorker(JobSubscriptionRepository $jobSubscriptionRepository, Request $request, JobCreationRepository $jobCreationRepository, JobDetailRepository $jobDetailRepository): Response
+    public function mailConfirmationWorker(JobSubscriptionRepository $jobSubscriptionRepository, Request $request, JobCreationRepository $jobCreationRepository, JobDetailRepository $jobDetailRepository, JobPostRepository $jobPostRepository): Response
     {
         $id = $request->get('id');
         $name = $request->get('name');
@@ -48,7 +48,7 @@ class MailController extends AbstractController
             echo "Email sent successfully";
         }
 
-        $message = $jobSubscriptionRepository->subscribeForJob($id, $name, $email, $phone);
+        $message = $jobSubscriptionRepository->subscribeForJob($id, $name, $email, $phone, $jobPostRepository);
         $response = new Response();
         $response->setContent(json_encode($message));
 

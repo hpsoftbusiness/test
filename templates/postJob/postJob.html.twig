@@ -315,9 +315,9 @@
 
               {% else %}
                 {% for post in posts %}
-                    <tr>
+                    <tr {% if post.reservation == 1 %} style="background-color: black;" {% endif %} >
                         {% set i = i + 1 %}
-                        <th scope="row">{{ i }}</th>
+                        <th scope="row"> {% if post.reservation == 1 %} <span style="color: white">ZLECENIE JUZ PODJETE</span> {% endif %} {{ i }} </th>
                         <td>{{ post.category }}</td>
                         <td>{{ post.technology }}</td>
                         <td>{{ post.executionTime }} hours</td>
@@ -325,7 +325,7 @@
                         <td>{{ post.scope }}</td>
                         <td>Warsaw</td>
                         <td>
-                            <a href="/detail?id={{ post.id }}"><button class="btn btn-danger">szczegóły</button><a>
+                            <a  {% if post.reservation == 1 %}  onclick="return false;" {% endif %} href="/detail?id={{ post.id }}"><button class="btn btn-danger" {% if post.reservation == 1 %} disabled {% endif %}>szczegóły</button><a>
                         </td>
                     </tr>
                 {% endfor %}
