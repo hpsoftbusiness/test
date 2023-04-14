@@ -19,6 +19,7 @@ return [
         '/mail-confirmation-worker' => [[['_route' => 'mailConfirmationWorker', '_controller' => 'App\\Controller\\MailController::mailConfirmationWorker'], null, null, null, false, false, null]],
         '/trial' => [[['_route' => 'trial', '_controller' => 'App\\Controller\\EmployerController::trial'], null, null, null, false, false, null]],
         '/mail-confirmation-employer' => [[['_route' => 'mailConfirmationEmployer', '_controller' => 'App\\Controller\\MailController::mailConfirmationEmployer'], null, null, null, false, false, null]],
+        '/' => [[['_route' => 'index2', '_controller' => 'App\\Controller\\IndexController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

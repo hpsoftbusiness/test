@@ -16,3 +16,6 @@ trial:
 mailConfirmationEmployer:
     path: /mail-confirmation-employer
     controller: App\Controller\MailController::mailConfirmationEmployer
+index2:
+    path: /
+    controller: App\Controller\IndexController::index
