@@ -2,6 +2,8 @@
 
 namespace App\Repository;
 
+use App\Entity\JobCreation;
+use App\Entity\JobDetail;
 use App\Entity\JobSubscription;
 use DateTime;
 use DateTimeZone;
@@ -122,5 +124,22 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         );
 
         echo $this->sms_send($params, $token);
+    }
+
+    public function getDataForSubscriber($id, JobCreationRepository $jobCreationRepository, JobDetailRepository $jobDetailRepository)
+    {
+       $jobCreation = $jobCreationRepository->findOneBy(['jobPostId' => $id]);
+       $email = $jobCreation->getEmail();
+       $phone = $jobCreation->getPhone();
+
+       $jobDetail = $jobDetailRepository->findOneBy(['jobPostId' => $id]);
+       $description = $jobDetail->getDescription();
+
+        $result = [];
+        $result['email'] = $email;
+        $result['phone'] = $phone;
+        $result['description'] = $description;
+
+        return $result;
     }
 }

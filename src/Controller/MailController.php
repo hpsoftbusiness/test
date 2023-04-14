@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Repository\JobCreationRepository;
+use App\Repository\JobDetailRepository;
 use App\Repository\JobPostRepository;
 use App\Repository\JobSubscriptionRepository;
 use PHPMailer\PHPMailer\PHPMailer;
@@ -12,14 +13,13 @@ use Symfony\Component\HttpFoundation\Response;
 
 class MailController extends AbstractController
 {
-
-    public function mailConfirmationWorker(JobSubscriptionRepository $jobSubscriptionRepository, Request $request): Response
+    public function mailConfirmationWorker(JobSubscriptionRepository $jobSubscriptionRepository, Request $request, JobCreationRepository $jobCreationRepository, JobDetailRepository $jobDetailRepository): Response
     {
         $id = $request->get('id');
         $name = $request->get('name');
         $email = $request->get('email');
         $phone = $request->get('phone');
-
+        $data = $jobSubscriptionRepository->getDataForSubscriber($id,  $jobCreationRepository,  $jobDetailRepository);
         $jobSubscriptionRepository->sendSmsWorker($phone);
         $mail = new PHPMailer();
         $mail->IsSMTP();
@@ -38,7 +38,7 @@ class MailController extends AbstractController
         $mail->AddReplyTo("hpsoftbusiness@gmail.com", "reply-to-name");
         $mail->AddCC("hpsoftbusiness@gmail.com", "cc-recipient-name");
         $mail->Subject = "Potwierdzenie zapisania sie na zlecenie";
-        $content = "<b>Zapisales sie na zlecenie. Milej pracy :)</b>";
+        $content = '<b>Zapisales sie na zlecenie, email: ' .  $data['email'] . ', telefon:'. $data['phone'] . ', opis:'. $data['description'] .'</b>';
 
         $mail->MsgHTML($content);
         if(!$mail->Send()) {
