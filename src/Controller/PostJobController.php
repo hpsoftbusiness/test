@@ -19,16 +19,27 @@ class PostJobController extends AbstractController
     {
         $page = $request->get('page') ?? 1;
         $search = $request->get('search');
+        $category = $request->get('category');
+        $technology = $request->get('technology');
 
         $post = [];
 
         if ($request->isMethod('POST')) {
-            $pagination = $jobPostRepository->getPaginatedResults($page, $search);
-           $post = $pagination->getPost();
-           $page = $pagination->getPage();
+            if ($technology != '') {
+                $pagination = $jobPostRepository->getPaginatedResultsTechnology($page, $technology);
+            } elseif ($category != '') {
+                $pagination = $jobPostRepository->getPaginatedResultsCategory($page, $category);
+
+            } elseif ($search != '') {
+                $pagination = $jobPostRepository->getPaginatedResults($page, $search);
+            }
+
+            $post = $pagination->getPost();
+            $page = $pagination->getPage();
         }
 
         return $this->render('postJob/postJob.html.twig', ['posts' => $post, 'search' => $search, 'page' => $page]);
     }
+
 
 }

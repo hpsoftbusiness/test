@@ -19,7 +19,7 @@ class MailController extends AbstractController
         $email = $request->get('email');
         $phone = $request->get('phone');
 
-        $jobSubscriptionRepository->sendSmsWorker($phone);
+     //   $jobSubscriptionRepository->sendSmsWorker($phone);
 
 
         $message = $jobSubscriptionRepository->subscribeForJob($id, $name, $email, $phone);
@@ -46,7 +46,7 @@ class MailController extends AbstractController
         $phone = $request->get('phone');
         $skills = $request->get('skills');
 
-        $jobSubscriptionRepository->sendSmsEmployer($phone);
+   //     $jobSubscriptionRepository->sendSmsEmployer($phone);
 
         $id = $jobDetailRepository->saveJobPost($category, $technology, $price, $description, $name, $email, $phone, $scope, $skills);
         $jobCreationRepository->createJob($id, $name, $email, $phone);

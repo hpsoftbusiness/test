@@ -458,12 +458,7 @@
     <section id="service" class="service angle">
         <div class="container">
             <div class="form-group row">
-                <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Kategoria</label>
-                    <div class="input-group">
-                        <input type="text" style="color: grey;"  size="50" class="form-control" id="category" placeholder="" aria-describedby="inputGroupPrepend3" required>
-                    </div>
-                </div>
+
                 <div class="col-md-4 mb-3">
                     <label for="validationServerUsername">Technologia</label>
                     <div class="input-group">
@@ -494,6 +489,21 @@
                         <input type="text"  size="50" style="color: grey;" class="form-control is-invalid" id="skills" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
+                <div class="col-md-4 mb-3">
+
+                    <div class="input-group">
+                        <label for="cars">Kategoria:</label>
+                        <div class="input-group">
+
+                        <select class="form-select"  name="cars" id="category">
+                            <option value="programowanie">programowanie</option>
+                            <option value="grafika">grafika</option>
+                            <option value="sprzet">sprzet</option>
+                            <option value="doradztwo">doradztwo</option>
+                        </select>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -501,6 +511,11 @@
             <div class="form-group mb-5">
                 <label for="exampleFormControlTextarea1" class="">Opis zadania</label>
                 <textarea style="color: grey;" class="form-control rounded-0" id="desc" rows="50"></textarea>
+            </div>
+
+            <div class="form-group mb-5">
+            <label for="myfile">Dodaj zalącznik:</label>
+            <input type="file" id="file" name="file">
             </div>
 
             <button class="btn btn-light">back</button>

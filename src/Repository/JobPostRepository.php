@@ -73,36 +73,74 @@ class JobPostRepository extends ServiceEntityRepository
         return $pagination;
     }
 
-//    /**
-//     * @return JobPost[] Returns an array of JobPost objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('j')
-//            ->andWhere('j.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('j.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+    public function getPaginatedResultsCategory(string $page, string $search)
+    {
+        $developers = $this->getEntityManager()->getRepository(JobPost::class);
+        $query = $developers->createQueryBuilder('u')
+            ->where('u.category LIKE :cat')
+            ->setParameter('cat', $search)
+            ->orderBy('u.scope', 'ASC')
+            ->getQuery();
 
-//    public function findOneBySomeField($value): ?JobPost
-//    {
-//        return $this->createQueryBuilder('j')
-//            ->andWhere('j.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+        $post = [];
+        $pageSize = 10;
+        $paginator = new Paginator($query);
+        $totalItems = count($paginator);
+
+        $pagesCount = ceil($totalItems / $pageSize);
+
+        $paginator
+            ->getQuery()
+            ->setFirstResult($pageSize * ((int)$page - 1))
+            ->setMaxResults($pageSize);
+
+        foreach ($paginator as $pageItem) {
+            $post[] = $pageItem;
+        }
+
+        $pagination = new Pagination();
+        $pagination->setPost($post);
+        $pagination->setPage($pagesCount);
+
+        return $pagination;
+    }
+
+    public function getPaginatedResultsTechnology(string $page, string $search)
+    {
+        $developers = $this->getEntityManager()->getRepository(JobPost::class);
+        $query = $developers->createQueryBuilder('u')
+            ->where('u.technology LIKE :tech')
+            ->setParameter('tech', $search)
+            ->orderBy('u.scope', 'ASC')
+            ->getQuery();
+
+        $post = [];
+        $pageSize = 10;
+        $paginator = new Paginator($query);
+        $totalItems = count($paginator);
+
+        $pagesCount = ceil($totalItems / $pageSize);
+
+        $paginator
+            ->getQuery()
+            ->setFirstResult($pageSize * ((int)$page - 1))
+            ->setMaxResults($pageSize);
+
+        foreach ($paginator as $pageItem) {
+            $post[] = $pageItem;
+        }
+
+        $pagination = new Pagination();
+        $pagination->setPost($post);
+        $pagination->setPage($pagesCount);
+
+        return $pagination;
+    }
 
     public function getPost($id)
     {
         return $this->getEntityManager()->getRepository(JobPost::class)->findOneBy(['id' => $id]);
     }
-
 
     /**
      * @param string $category
