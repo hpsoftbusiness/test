@@ -311,7 +311,7 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
                     <br>
 
                 </div><!--/ Logo end -->
-           
+
             </div><!--/ Row end -->
             <h4 style=\"color:white;\">Zadanie: ";
         // line 271
@@ -824,7 +824,7 @@ class __TwigTemplate_bcd0b489bf01e69e16e1f1982fb6f5d73b3901474e333ddac1b8c41f290
                     <br>
 
                 </div><!--/ Logo end -->
-           
+
             </div><!--/ Row end -->
             <h4 style=\"color:white;\">Zadanie: {{ post.scope }}</h4>
             <h4 style=\"color:white;\">Kategoria: {{ post.category }}</h4>

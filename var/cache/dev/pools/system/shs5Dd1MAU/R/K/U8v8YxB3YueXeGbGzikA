@@ -1,0 +1,3 @@
+<?php //App%255CController%255CMailController%2523sms_send
+
+return [PHP_INT_MAX, []];
