@@ -34,9 +34,9 @@ class MailController extends AbstractController
 
         $mail->IsHTML(true);
         $mail->AddAddress($email, $name);
-        $mail->SetFrom("polisoft@gmail.com", "Polisoft");
-        $mail->AddReplyTo("hpsoftbusiness@gmail.com", "reply-to-name");
-        $mail->AddCC("hpsoftbusiness@gmail.com", "cc-recipient-name");
+        $mail->SetFrom("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddReplyTo("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddCC("polisoftbusiness@gmail.com", "Polisoft");
         $mail->Subject = "Potwierdzenie zapisania sie na zlecenie";
         $content = '<b>Zapisales sie na zlecenie, email: ' .  $data['email'] . ', telefon:'. $data['phone'] . ', opis:'. $data['description'] .'</b>';
 
@@ -86,9 +86,9 @@ class MailController extends AbstractController
 
         $mail->IsHTML(true);
         $mail->AddAddress($email, $name);
-        $mail->SetFrom("polisoft@gmail.com", "Polisoft");
-        $mail->AddReplyTo("hpsoftbusiness@gmail.com", "reply-to-name");
-        $mail->AddCC("hpsoftbusiness@gmail.com", "cc-recipient-name");
+        $mail->SetFrom("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddReplyTo("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddCC("polisoftbusiness@gmail.com", "Polisoft");
         $mail->Subject = "Potwierdzenie zamieszczenia ogloszenia.";
         $content = "<b>Twoje ogloszenie zostalo zamieszczone. Dziekujemy :)</b>";
 
