@@ -161,6 +161,7 @@ class JobPostRepository extends ServiceEntityRepository
         $jobPost->setCategory($category);
         $jobPost->setPrice((int)$price);
         $jobPost->setScope($scope);
+        $jobPost->setReservation(0);
         $jobPost->setSkills($skills);
         $jobPost->setExecutionTime(10);
 

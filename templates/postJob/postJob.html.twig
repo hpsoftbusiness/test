@@ -189,6 +189,7 @@
     <section id="service" class="service angle">
         <div class="container">
             {%  if posts | length == 0 %}
+            <h3>Szukaj po kategoriach:</h3>
             <table>
                 <tr>
                     <td>
@@ -232,10 +233,10 @@
                 <form action="/post-job" method="POST">
                     <div class="form-group">
                         <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="category" value="doradztwo">
+                        <input type="hidden" name="category" value="wsparcie">
                     </div>
 
-                    <button type="submit" class="btn btn-primary solid cd-btn">doradztwo</button></a>
+                    <button type="submit" class="btn btn-primary solid cd-btn">wsparcie</button></a>
                 </form>
             </div>
                     </td>
@@ -243,54 +244,6 @@
                 <tr>
 
 
-                    <td>
-            <div>
-                <form action="/post-job" method="POST">
-                    <div class="form-group">
-                        <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="technology" value="wordpress">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary solid cd-btn">wordpress</button></a>
-                </form>
-            </div>
-                    </td>
-                    <td>
-            <div>
-                <form action="/post-job" method="POST">
-                    <div class="form-group">
-                        <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="technology" value="python">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary solid cd-btn">python</button></a>
-                </form>
-            </div>
-                    </td>
-                    <td>
-            <div>
-                <form action="/post-job" method="POST">
-                    <div class="form-group">
-                        <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="technology" value="android">
-                    </div>
-
-                    <button type="submit" class="btn btn-primary solid cd-btn">android</button></a>
-                </form>
-            </div>
-                    </td>
-                    <td>
-                        <div>
-                            <form action="/post-job" method="POST">
-                                <div class="form-group">
-                                    <input type="hidden" value="1" name="page">
-                                    <input type="hidden" name="technology" value="php">
-                                </div>
-
-                                <button type="submit" class="btn btn-primary solid cd-btn">php</button></a>
-                            </form>
-                        </div>
-                    </td>
                 </tr></table>
             {% else %}
 

@@ -230,15 +230,15 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".5s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-tachometer\"></i></span>
-                            <h3>Design / GRAFIKA</h3>
-                            <p>Potrzebujesz projektu graficznego / wizualizacji ?</p>
+                            <h3>Design / Grafika</h3>
+                            <p>Potrzebujesz projektu graficznego / wizualizacji ? Potrzebujesz zaprojektowac interfejs aplikacji?</p>
                         </div>
                     </div><!--/ End first service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".8s\" >
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-android\"></i></span>
-                            <h3>Programowanie APLIKACJI MOBILNYCH i WEBOWYCH</h3>
+                            <h3>Programowanie / Testowanie</h3>
                             <p>Potrzebujesz dokonczyć projekt? Chcesz zlecic część pracy? Masz pojedyncze niedokończone zadania? Chcesz zrobić swój projekt? </p>
                         </div>
 
@@ -247,18 +247,20 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.1s\">
                             <div class=\"service-content text-center\">
                                 <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-shopping-cart\"></i></span>
-                                <h3>E-commerce</h3>
-                                <p>Potrzebujesz sklepu internetowego albo platformy e-commerce ? Potrzebujesz coś zmienić albo ulepszyć w swoim biznesie?   </p>
+                                <h3>Sprzęt / Sieci</h3>
+                                <p>Potrzebujesz skonfigurowac firewall badz router sieciowy? Masz problem z siecią w swojej firmie? Nie dziala Ci sprzet?   </p>
                             </div>
                         </div><!--/ End Third service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.4s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-lightbulb-o\"></i></span>
-                            <h3>Konsulting</h3>
-                            <p>Masz problem it ale jesteś ekspertem w innej branzy? Chciałbyś doradzić się fachowca?</p>
+                            <h3>DEVOPS / WSPARCIE</h3>
+                            <p>Potrzebujesz cos ustawic? Cos Ci nie dziala? Masz problem z oprogramowaniem?</p>
                         </div>
                     </div><!--/ End 4th service -->
+
+
                 </div>
             </div><!-- Content row end -->
         </div><!--/ Container end -->
@@ -936,15 +938,15 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".5s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-tachometer\"></i></span>
-                            <h3>Design / GRAFIKA</h3>
-                            <p>Potrzebujesz projektu graficznego / wizualizacji ?</p>
+                            <h3>Design / Grafika</h3>
+                            <p>Potrzebujesz projektu graficznego / wizualizacji ? Potrzebujesz zaprojektowac interfejs aplikacji?</p>
                         </div>
                     </div><!--/ End first service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\".8s\" >
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-android\"></i></span>
-                            <h3>Programowanie APLIKACJI MOBILNYCH i WEBOWYCH</h3>
+                            <h3>Programowanie / Testowanie</h3>
                             <p>Potrzebujesz dokonczyć projekt? Chcesz zlecic część pracy? Masz pojedyncze niedokończone zadania? Chcesz zrobić swój projekt? </p>
                         </div>
 
@@ -953,18 +955,20 @@ class __TwigTemplate_2f1009460c8041c05f7c754072560853af23af1601acc105154af2ac41b
                         <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.1s\">
                             <div class=\"service-content text-center\">
                                 <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-shopping-cart\"></i></span>
-                                <h3>E-commerce</h3>
-                                <p>Potrzebujesz sklepu internetowego albo platformy e-commerce ? Potrzebujesz coś zmienić albo ulepszyć w swoim biznesie?   </p>
+                                <h3>Sprzęt / Sieci</h3>
+                                <p>Potrzebujesz skonfigurowac firewall badz router sieciowy? Masz problem z siecią w swojej firmie? Nie dziala Ci sprzet?   </p>
                             </div>
                         </div><!--/ End Third service -->
 
                     <div class=\"col-md-3 col-sm-3 wow fadeInDown\" data-wow-delay=\"1.4s\">
                         <div class=\"service-content text-center\">
                             <span class=\"service-icon icon-pentagon\"><i class=\"fa fa-lightbulb-o\"></i></span>
-                            <h3>Konsulting</h3>
-                            <p>Masz problem it ale jesteś ekspertem w innej branzy? Chciałbyś doradzić się fachowca?</p>
+                            <h3>DEVOPS / WSPARCIE</h3>
+                            <p>Potrzebujesz cos ustawic? Cos Ci nie dziala? Masz problem z oprogramowaniem?</p>
                         </div>
                     </div><!--/ End 4th service -->
+
+
                 </div>
             </div><!-- Content row end -->
         </div><!--/ Container end -->
