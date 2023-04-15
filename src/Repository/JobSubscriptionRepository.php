@@ -136,6 +136,7 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->Mailer = "smtp";
+        $mail->CharSet = "UTF-8";
         $mail->SMTPDebug  = 1;
         $mail->SMTPAuth   = TRUE;
         $mail->SMTPSecure = "tls";
