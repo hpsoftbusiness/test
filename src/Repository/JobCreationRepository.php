@@ -47,7 +47,7 @@ class JobCreationRepository extends ServiceEntityRepository
      *
      * @return string
      */
-    public function createJob(int $jobPost, $name, $email, $phone)
+    public function createCreationEntry(int $jobPost, $name, $email, $phone)
     {
         $jobSubscription = new JobCreation();
         $jobSubscription->setJobPostId($jobPost);
@@ -64,28 +64,4 @@ class JobCreationRepository extends ServiceEntityRepository
         return 'true';
     }
 
-//    /**
-//     * @return JobCreation[] Returns an array of JobCreation objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('j')
-//            ->andWhere('j.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('j.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
-
-//    public function findOneBySomeField($value): ?JobCreation
-//    {
-//        return $this->createQueryBuilder('j')
-//            ->andWhere('j.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
 }

@@ -5,8 +5,8 @@ namespace App\Repository;
 use App\Entity\JobDetail;
 use App\Entity\JobPost;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\Tools\Pagination\Paginator;
 use Doctrine\Persistence\ManagerRegistry;
+use PHPMailer\PHPMailer\PHPMailer;
 
 /**
  * @extends ServiceEntityRepository<JobPost>
@@ -41,102 +41,6 @@ class JobPostRepository extends ServiceEntityRepository
         }
     }
 
-    public function getPaginatedResults(string $page, string $search)
-    {
-        $developers = $this->getEntityManager()->getRepository(JobPost::class);
-        $query = $developers->createQueryBuilder('u')
-            ->where('u.technology LIKE :tech')
-            ->setParameter('tech', $search)
-            ->orderBy('u.scope', 'ASC')
-            ->getQuery();
-
-        $post = [];
-        $pageSize = 10;
-        $paginator = new Paginator($query);
-        $totalItems = count($paginator);
-
-        $pagesCount = ceil($totalItems / $pageSize);
-
-        $paginator
-            ->getQuery()
-            ->setFirstResult($pageSize * ((int)$page - 1))
-            ->setMaxResults($pageSize);
-
-        foreach ($paginator as $pageItem) {
-            $post[] = $pageItem;
-        }
-
-        $pagination = new Pagination();
-        $pagination->setPost($post);
-        $pagination->setPage($pagesCount);
-
-        return $pagination;
-    }
-
-    public function getPaginatedResultsCategory(string $page, string $search)
-    {
-        $developers = $this->getEntityManager()->getRepository(JobPost::class);
-        $query = $developers->createQueryBuilder('u')
-            ->where('u.category LIKE :cat')
-            ->setParameter('cat', $search)
-            ->orderBy('u.scope', 'ASC')
-            ->getQuery();
-
-        $post = [];
-        $pageSize = 10;
-        $paginator = new Paginator($query);
-        $totalItems = count($paginator);
-
-        $pagesCount = ceil($totalItems / $pageSize);
-
-        $paginator
-            ->getQuery()
-            ->setFirstResult($pageSize * ((int)$page - 1))
-            ->setMaxResults($pageSize);
-
-        foreach ($paginator as $pageItem) {
-            $post[] = $pageItem;
-        }
-
-        $pagination = new Pagination();
-        $pagination->setPost($post);
-        $pagination->setPage($pagesCount);
-
-        return $pagination;
-    }
-
-    public function getPaginatedResultsTechnology(string $page, string $search)
-    {
-        $developers = $this->getEntityManager()->getRepository(JobPost::class);
-        $query = $developers->createQueryBuilder('u')
-            ->where('u.technology LIKE :tech')
-            ->setParameter('tech', $search)
-            ->orderBy('u.scope', 'ASC')
-            ->getQuery();
-
-        $post = [];
-        $pageSize = 10;
-        $paginator = new Paginator($query);
-        $totalItems = count($paginator);
-
-        $pagesCount = ceil($totalItems / $pageSize);
-
-        $paginator
-            ->getQuery()
-            ->setFirstResult($pageSize * ((int)$page - 1))
-            ->setMaxResults($pageSize);
-
-        foreach ($paginator as $pageItem) {
-            $post[] = $pageItem;
-        }
-
-        $pagination = new Pagination();
-        $pagination->setPost($post);
-        $pagination->setPage($pagesCount);
-
-        return $pagination;
-    }
-
     public function getPost($id)
     {
         return $this->getEntityManager()->getRepository(JobPost::class)->findOneBy(['id' => $id]);
@@ -154,16 +58,17 @@ class JobPostRepository extends ServiceEntityRepository
      *
      * @return int|null
      */
-    public function saveJobPost(string $category, string $technology, string $price, string $description, string $name, string $email, string $phone, string $scope, string $skills)
+    public function createJob($category, $technology, $price, $description, $name, $email, $phone, $scope, $skills, $location, $time)
     {
         $jobPost = new JobPost();
         $jobPost->setTechnology($technology);
         $jobPost->setCategory($category);
         $jobPost->setPrice((int)$price);
+        $jobPost->setLocation($location);
         $jobPost->setScope($scope);
         $jobPost->setReservation(0);
         $jobPost->setSkills($skills);
-        $jobPost->setExecutionTime(10);
+        $jobPost->setExecutionTime($time);
 
         $this->getEntityManager()->persist($jobPost);
         $this->getEntityManager()->flush();
@@ -172,7 +77,7 @@ class JobPostRepository extends ServiceEntityRepository
         $id = $found->getId();
 
         $jobDetail = new JobDetail();
-        $jobDetail->setDescription($description);
+        $jobDetail->setDescription(nl2br($description));
         $jobDetail->setJobPostId($id);
         $jobDetail->setDifficulty(2);
 
@@ -181,4 +86,83 @@ class JobPostRepository extends ServiceEntityRepository
 
         return $id;
     }
+
+    public function sendEmployerMail($email, $name)
+    {
+        $mail = new PHPMailer();
+        $mail->IsSMTP();
+        $mail->Mailer = "smtp";
+        $mail->SMTPDebug  = 1;
+        $mail->SMTPAuth   = TRUE;
+        $mail->SMTPSecure = "tls";
+        $mail->Port       = 587;
+        $mail->Host       = "smtp-relay.sendinblue.com";
+        $mail->Username   = "polisoftbusiness@gmail.com";
+        $mail->Password   = "gs0JWOQ9EkzHAhym";
+
+        $mail->IsHTML(true);
+        $mail->AddAddress($email, $name);
+        $mail->SetFrom("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddReplyTo("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddCC("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->Subject = "Potwierdzenie zamieszczenia ogloszenia.";
+        $content = "<b>Twoje ogloszenie zostalo zamieszczone. Dziekujemy :)</b>";
+
+        $mail->MsgHTML($content);
+        if(!$mail->Send()) {
+            echo "Error while sending Email.";
+        } else {
+            echo "Email sent successfully";
+        }
+
+        header("Location: http://itnuke.pl");
+        die();
+    }
+
+    public function sendSmsEmployer($phone)
+    {
+        $token = "Zbwe2FylhDsbnan5cetcOXKqmdQmE2FyzRaPS71J"; //https://ssl.smsapi.pl/react/oauth/manage
+
+        $params = array(
+            'to' => $phone, //numery odbiorców rozdzielone przecinkami
+            'from' => 'Test', //pole nadawcy stworzone w https://ssl.smsapi.pl/sms_settings/sendernames
+            'message' => "Oferta dodana.", //treść wiadomości
+            'format' => 'json'
+        );
+
+        $this->sms_send($params, $token);
+    }
+
+    public function sms_send($params, $token, $backup = false)
+    {
+
+        static $content;
+
+        if ($backup == true) {
+            $url = 'https://api2.smsapi.pl/sms.do';
+        } else {
+            $url = 'https://api.smsapi.pl/sms.do';
+        }
+
+        $c = curl_init();
+        curl_setopt($c, CURLOPT_URL, $url);
+        curl_setopt($c, CURLOPT_POST, true);
+        curl_setopt($c, CURLOPT_POSTFIELDS, $params);
+        curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($c, CURLOPT_HTTPHEADER, array(
+            "Authorization: Bearer $token"
+        ));
+
+        $content = curl_exec($c);
+        $http_status = curl_getinfo($c, CURLINFO_HTTP_CODE);
+
+        if ($http_status != 200 && $backup == false) {
+            $backup = true;
+            $this->sms_send($params, $token, $backup);
+        }
+
+        curl_close($c);
+        return $content;
+    }
+
 }

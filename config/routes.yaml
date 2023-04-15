@@ -1,21 +1,21 @@
 index:
     path: /index
     controller: App\Controller\IndexController::index
-postJob:
-    path: /post-job
-    controller: App\Controller\PostJobController::postJob
-detail:
-    path: /detail
-    controller: App\Controller\ExpertController::detail
-mailConfirmationWorker:
-    path: /mail-confirmation-worker
-    controller: App\Controller\MailController::mailConfirmationWorker
-trial:
-    path: /trial
-    controller: App\Controller\EmployerController::trial
-mailConfirmationEmployer:
-    path: /mail-confirmation-employer
-    controller: App\Controller\MailController::mailConfirmationEmployer
 index2:
     path: /
     controller: App\Controller\IndexController::index
+create:
+    path: /create
+    controller: App\Controller\EmployerController::create
+trial:
+    path: /trial
+    controller: App\Controller\EmployerController::trial
+detail:
+    path: /detail
+    controller: App\Controller\ExpertController::detail
+search:
+    path: /search
+    controller: App\Controller\ExpertController::search
+subscribe:
+    path: /subscribe
+    controller: App\Controller\ExpertController::subscribe

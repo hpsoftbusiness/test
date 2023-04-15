@@ -118,7 +118,7 @@
                 window.setTimeout(function () {
                     $.ajax({
                         method: "POST",
-                        url: "/mail-confirmation-worker",
+                        url: "/subscribe",
                         data: {
                             id: $('#postId').val(),
                             name: $('#name').val(),
@@ -131,6 +131,7 @@
 
                     $("#donePopup").modal();
 
+                    window.location.href = 'http://itnuke.pl';
                 }, 600);
 
             })
@@ -275,7 +276,7 @@
             <h4 style=" color: white;">Zarobek: {{ post.price }} PLN</h4>
             <h4 style=" color: white;">Czas: {{ post.ExecutionTime }} godzin</h4>
             <h4 style=" color: white;"> Ryzyko:
-                {% for d in 1..detail.difficulty %}
+                {% for d in 1..difficulty %}
                     <span class="fa fa-star checked" style="color: red;"></span>
                 {% endfor %}
                 <span class="fa fa-star" style="color: black;"></span>
@@ -361,7 +362,7 @@
     <section id="service" class="service angle">
         <div class="container">
                     <br>
-                    <p align="justify">{{ detail.description |raw }}</p>
+                    <p align="justify">{{ detail | raw }}</p>
                     <br>
 
 

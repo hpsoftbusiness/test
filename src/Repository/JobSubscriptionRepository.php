@@ -2,13 +2,12 @@
 
 namespace App\Repository;
 
-use App\Entity\JobCreation;
-use App\Entity\JobDetail;
 use App\Entity\JobSubscription;
 use DateTime;
 use DateTimeZone;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use PHPMailer\PHPMailer\PHPMailer;
 
 /**
  * @extends ServiceEntityRepository<JobSubscription>
@@ -111,22 +110,8 @@ class JobSubscriptionRepository extends ServiceEntityRepository
             'format' => 'json'
         );
 
-        echo $this->sms_send($params, $token);
+         $this->sms_send($params, $token);
 
-    }
-
-    public function sendSmsEmployer($phone)
-    {
-        $token = "Zbwe2FylhDsbnan5cetcOXKqmdQmE2FyzRaPS71J"; //https://ssl.smsapi.pl/react/oauth/manage
-
-        $params = array(
-            'to' => $phone, //numery odbiorców rozdzielone przecinkami
-            'from' => 'Test', //pole nadawcy stworzone w https://ssl.smsapi.pl/sms_settings/sendernames
-            'message' => "Oferta dodana.", //treść wiadomości
-            'format' => 'json'
-        );
-
-        echo $this->sms_send($params, $token);
     }
 
     public function getDataForSubscriber($id, JobCreationRepository $jobCreationRepository, JobDetailRepository $jobDetailRepository)
@@ -144,5 +129,35 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         $result['description'] = $description;
 
         return $result;
+    }
+
+    public function sendSubscriptionMail($email, $name, $data)
+    {
+        $mail = new PHPMailer();
+        $mail->IsSMTP();
+        $mail->Mailer = "smtp";
+        $mail->SMTPDebug  = 1;
+        $mail->SMTPAuth   = TRUE;
+        $mail->SMTPSecure = "tls";
+        $mail->Port       = 587;
+        $mail->Host       = "smtp-relay.sendinblue.com";
+        $mail->Username   = "polisoftbusiness@gmail.com";
+        $mail->Password   = "gs0JWOQ9EkzHAhym";
+
+        $mail->IsHTML(true);
+        $mail->AddAddress($email, $name);
+        $mail->SetFrom("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddReplyTo("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->AddCC("polisoftbusiness@gmail.com", "Polisoft");
+        $mail->Subject = "Potwierdzenie zapisania sie na zlecenie";
+        $content = '<b>Zapisales sie na zlecenie, email: ' .  $data['email'] . ', telefon:'. $data['phone'] . ', opis:'. $data['description'] .'</b>';
+
+        $mail->MsgHTML($content);
+        if(!$mail->Send()) {
+            echo "Error while sending Email.";
+            var_dump($mail);
+        } else {
+            echo "Email sent successfully";
+        }
     }
 }
