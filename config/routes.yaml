@@ -19,3 +19,6 @@ search:
 subscribe:
     path: /subscribe
     controller: App\Controller\ExpertController::subscribe
+job:
+    path: /job
+    controller: App\Controller\EmployerController:job

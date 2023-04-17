@@ -2,9 +2,13 @@
 
 namespace App\Controller;
 
+use App\Entity\JobPost;
+use App\Entity\User;
 use App\Repository\JobCreationRepository;
 use App\Repository\JobPostRepository;
 use App\Repository\JobSubscriptionRepository;
+use App\Repository\Pagination;
+use App\Repository\UserRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -12,9 +16,26 @@ use Symfony\Component\HttpFoundation\Response;
 class EmployerController extends AbstractController
 {
 
-    public function trial()
+    public function trial(UserRepository $user)
     {
-        return $this->render('employer/trial.html.twig');
+        if (!$user->canAccess()) {
+            return $this->render('employer/buy.html.twig');
+        }
+        else {
+            $user->create();
+            $user->decreaseLimit();
+            return $this->render('employer/trial.html.twig');
+        }
+    }
+
+    public function job(UserRepository $user): Response
+    {
+        if ($user->hasLimit()) {
+            $user->decreaseLimit();
+            return $this->render('employer/job.html.twig');
+        }
+
+        return $this->render('employer/buy.html.twig');
     }
 
     /**
