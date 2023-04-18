@@ -46,19 +46,7 @@ class JobPostRepository extends ServiceEntityRepository
         return $this->getEntityManager()->getRepository(JobPost::class)->findOneBy(['id' => $id]);
     }
 
-    /**
-     * @param string $category
-     * @param string $technology
-     * @param string $price
-     * @param string $description
-     * @param string $name
-     * @param string $email
-     * @param string $phone
-     * @param string $scope
-     *
-     * @return int|null
-     */
-    public function createJob($category, $technology, $price, $description, $name, $email, $phone, $scope, $skills, $location, $time)
+    public function createJob($category, $technology, $price, $description, $name, $email, $phone, $scope, $skills, $location, $time, $filename)
     {
         $jobPost = new JobPost();
         $jobPost->setTechnology($technology);
@@ -80,6 +68,7 @@ class JobPostRepository extends ServiceEntityRepository
         $jobDetail->setDescription(nl2br($description));
         $jobDetail->setJobPostId($id);
         $jobDetail->setDifficulty(2);
+        $jobDetail->setFileName($filename);
 
         $this->getEntityManager()->persist($jobDetail);
         $this->getEntityManager()->flush();

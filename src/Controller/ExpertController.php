@@ -18,10 +18,11 @@ class ExpertController extends AbstractController
         $id = $_GET['id'];
         $difficulty = $jobDetailRepository->getDetail($id)->getDifficulty();
         $detail = $jobDetailRepository->getDetail($id)->getDescription();
+        $file = $jobDetailRepository->getDetail($id)->getFileName();
 
         $post = $jobPostRepository->getPost($id);
 
-        return $this->render('expert/detail.html.twig', [ 'detail' => $detail, 'post' => $post, 'difficulty' => $difficulty]);
+        return $this->render('expert/detail.html.twig', [ 'file' => $file, 'detail' => $detail, 'post' => $post, 'difficulty' => $difficulty]);
     }
 
     public function subscribe(JobSubscriptionRepository $jobSubscriptionRepository, Request $request, JobCreationRepository $jobCreationRepository, JobDetailRepository $jobDetailRepository, JobPostRepository $jobPostRepository): Response
@@ -31,10 +32,9 @@ class ExpertController extends AbstractController
         $email = $request->get('email');
         $phone = $request->get('phone');
         $data = $jobSubscriptionRepository->getDataForSubscriber($id,  $jobCreationRepository,  $jobDetailRepository);
+        $jobSubscriptionRepository->subscribeForJob($id, $name, $email, $phone, $jobPostRepository);
         $jobSubscriptionRepository->sendSmsWorker($phone);
         $jobSubscriptionRepository->sendSubscriptionMail($email, $name, $data);
-
-        $message = $jobSubscriptionRepository->subscribeForJob($id, $name, $email, $phone, $jobPostRepository);
 
         return new Response();
     }

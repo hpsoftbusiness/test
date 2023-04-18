@@ -72,4 +72,25 @@ class JobDetail
 
         return $this;
     }
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $fileName;
+
+    /**
+     * @return mixed
+     */
+    public function getFileName()
+    {
+        return $this->fileName;
+    }
+
+    /**
+     * @param mixed $fileName
+     */
+    public function setFileName($fileName): void
+    {
+        $this->fileName = $fileName;
+    }
 }
