@@ -106,7 +106,7 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         $params = array(
             'to' => $phone, //numery odbiorców rozdzielone przecinkami
             'from' => 'Test', //pole nadawcy stworzone w https://ssl.smsapi.pl/sms_settings/sendernames
-            'message' => "Zapis udany.", //treść wiadomości
+            'message' => "Zapis udany. Skontaktuj sie ze swoim zleceniodawca.", //treść wiadomości
             'format' => 'json'
         );
 
@@ -151,7 +151,7 @@ class JobSubscriptionRepository extends ServiceEntityRepository
         $mail->AddReplyTo("polisoftbusiness@gmail.com", "Polisoft");
         $mail->AddCC("polisoftbusiness@gmail.com", "Polisoft");
         $mail->Subject = "Potwierdzenie zapisania sie na zlecenie";
-        $content = '<b>Zapisales sie na zlecenie, email: ' .  $data['email'] . ', telefon:'. $data['phone'] . ', opis:'. $data['description'] .'</b>';
+        $content = '<b>Zapisales sie na zlecenie, email: ' .  $data['email'] . ', telefon:'. $data['phone'] . ', opis:'. $data['description'] . '. Skontaktuj sie ze zleceniodawca w celu dalszych szczegolow</b>';
 
         $mail->MsgHTML($content);
         if(!$mail->Send()) {
