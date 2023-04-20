@@ -1,0 +1,136 @@
+openapi: 3.0.0
+paths:
+  /api/job:
+    get:
+      operationId: cd10b569558e505f11ff3c77cb419e84
+      responses:
+        '200':
+          description: 'Get list of all job posts.'
+    put:
+      operationId: 5ba5900dda8801ed1eaac7a89ebdd077
+      parameters:
+        -
+          $ref: '#/components/parameters/category'
+        -
+          $ref: '#/components/parameters/technology'
+        -
+          $ref: '#/components/parameters/price'
+        -
+          $ref: '#/components/parameters/skills'
+        -
+          $ref: '#/components/parameters/scope'
+        -
+          $ref: '#/components/parameters/location'
+        -
+          $ref: '#/components/parameters/reservation'
+        -
+          $ref: '#/components/parameters/executionTime'
+      responses:
+        '200':
+          description: 'Edit articular job post by its id.'
+    post:
+      operationId: 65c81147001d1d424b6623ab4f28c685
+      parameters:
+        -
+          $ref: '#/components/parameters/category'
+        -
+          $ref: '#/components/parameters/technology'
+        -
+          $ref: '#/components/parameters/price'
+        -
+          $ref: '#/components/parameters/skills'
+        -
+          $ref: '#/components/parameters/scope'
+        -
+          $ref: '#/components/parameters/location'
+        -
+          $ref: '#/components/parameters/reservation'
+        -
+          $ref: '#/components/parameters/executionTime'
+      responses:
+        '200':
+          description: 'Post new job'
+    delete:
+      operationId: ed0c9164a832b5e6267341c49c0aeeda
+      parameters:
+        -
+          $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: 'Delete of particular job post by its id.'
+  '/api/job{id)':
+    get:
+      operationId: 94dd16d7385406b3983304c778ae6a3e
+      parameters:
+        -
+          $ref: '#/components/parameters/id'
+      responses:
+        '200':
+          description: 'Show perticular job post by its id.'
+components:
+  parameters:
+    category:
+      name: category
+      in: query
+      description: 'category of post like programowanie, grafika, wsparcie'
+      required: true
+      schema:
+        type: string
+    technology:
+      name: technology
+      in: query
+      description: 'technology of work like php'
+      required: true
+      schema:
+        type: string
+    price:
+      name: price
+      in: query
+      description: 'overall price of task ex 400'
+      required: true
+      schema:
+        type: int
+    skills:
+      name: skills
+      in: query
+      description: 'skills needed in task like laravel'
+      required: true
+      schema:
+        type: string
+    scope:
+      name: scope
+      in: query
+      description: 'overall scope of work'
+      required: true
+      schema:
+        type: string
+    location:
+      name: location
+      in: query
+      description: 'location like warszawa'
+      required: true
+      schema:
+        type: string
+    executionTime:
+      name: executionTime
+      in: query
+      description: 'time needed to performed task'
+      required: true
+      schema:
+        type: string
+    reservation:
+      name: reservation
+      in: query
+      description: 'reservation in advance'
+      required: true
+      schema:
+        type: int
+    id:
+      name: id
+      in: query
+      description: 'id of post'
+      required: true
+      schema:
+        type: int
+
+
