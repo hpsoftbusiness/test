@@ -60,6 +60,7 @@ final class Versions
   'laminas/laminas-eventmanager' => '3.4.0@a93fd278c97b2d41ebbce5ba048a24e3e6f580ba',
   'laminas/laminas-zendframework-bridge' => '1.4.1@88bf037259869891afce6504cacc4f8a07b24d0f',
   'monolog/monolog' => '2.9.1@f259e2b15fb95494c83f52d3caad003bbf5ffaa1',
+  'nelmio/api-doc-bundle' => 'v4.11.1@d40c4eb0c090675f3685f75712af331f02924462',
   'phpdocumentor/reflection-common' => '2.2.0@1d01c49d4ed62f25aa84a747ad35d5a16924662b',
   'phpdocumentor/reflection-docblock' => '5.3.0@622548b623e81ca6d78b721c5e029f4ce664f170',
   'phpdocumentor/type-resolver' => '1.6.1@77a32518733312af16a44300404e945338981de3',
@@ -142,6 +143,7 @@ final class Versions
   'webmozart/assert' => '1.11.0@11cb2199493b2f8a3b53e7f19068fc6aac760991',
   'willdurand/jsonp-callback-validator' => 'v2.0.0@738c36e91d4d7e0ff0cac145f77057e0fb88526e',
   'willdurand/negotiation' => '3.1.0@68e9ea0553ef6e2ee8db5c1d98829f111e623ec2',
+  'zircote/swagger-php' => '4.7.9@3727cd85f98039f4242f1be14a01d095069ce71f',
   'myclabs/deep-copy' => '1.11.1@7284c22080590fb39f2ffa3e9057f10a4ddd0e0c',
   'nikic/php-parser' => 'v4.15.4@6bb5176bc4af8bcb7d926f88718db9b96a2d4290',
   'phar-io/manifest' => '2.0.3@97803eca37d319dfa7826cc2437fc020857acb53',
@@ -176,10 +178,10 @@ final class Versions
   'symfony/phpunit-bridge' => 'v6.2.7@56965fae0b6b8d271015990eff5240ffff02e185',
   'symfony/web-profiler-bundle' => 'v5.4.21@a83337a813d1398789bf4190a56dc3c4d8cc4d93',
   'theseer/tokenizer' => '1.2.1@34a41e998c2183e22995f158c581e7b5e755ab9e',
-  'symfony/polyfill-ctype' => '*@b3fca319d13209685d0c423d902bb87df7967bf0',
-  'symfony/polyfill-iconv' => '*@b3fca319d13209685d0c423d902bb87df7967bf0',
-  'symfony/polyfill-php72' => '*@b3fca319d13209685d0c423d902bb87df7967bf0',
-  '__root__' => 'dev-develop@b3fca319d13209685d0c423d902bb87df7967bf0',
+  'symfony/polyfill-ctype' => '*@b7d439dabb4255327ac9ffec64ad96c180fe5e61',
+  'symfony/polyfill-iconv' => '*@b7d439dabb4255327ac9ffec64ad96c180fe5e61',
+  'symfony/polyfill-php72' => '*@b7d439dabb4255327ac9ffec64ad96c180fe5e61',
+  '__root__' => 'dev-develop@b7d439dabb4255327ac9ffec64ad96c180fe5e61',
 );
 
     private function __construct()

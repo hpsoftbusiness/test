@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-develop',
         'version' => 'dev-develop',
-        'reference' => 'b3fca319d13209685d0c423d902bb87df7967bf0',
+        'reference' => 'b7d439dabb4255327ac9ffec64ad96c180fe5e61',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-develop',
             'version' => 'dev-develop',
-            'reference' => 'b3fca319d13209685d0c423d902bb87df7967bf0',
+            'reference' => 'b7d439dabb4255327ac9ffec64ad96c180fe5e61',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -270,6 +270,15 @@
             'install_path' => __DIR__ . '/../myclabs/deep-copy',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'nelmio/api-doc-bundle' => array(
+            'pretty_version' => 'v4.11.1',
+            'version' => '4.11.1.0',
+            'reference' => 'd40c4eb0c090675f3685f75712af331f02924462',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../nelmio/api-doc-bundle',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'nikic/php-parser' => array(
             'pretty_version' => 'v4.15.4',
@@ -1426,6 +1435,15 @@
             'replaced' => array(
                 0 => '3.4.1',
             ),
+        ),
+        'zircote/swagger-php' => array(
+            'pretty_version' => '4.7.9',
+            'version' => '4.7.9.0',
+            'reference' => '3727cd85f98039f4242f1be14a01d095069ce71f',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../zircote/swagger-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
     ),
 );

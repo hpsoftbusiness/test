@@ -7,6 +7,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Routing\Annotation\Route;
+use Nelmio\ApiDocBundle\Annotation\Model;
+use Nelmio\ApiDocBundle\Annotation\Security;
+use OpenApi\Annotations as OA;
+
 use Symfony\Component\HttpFoundation\Request;
 
 /**
@@ -16,7 +20,11 @@ use Symfony\Component\HttpFoundation\Request;
 class JobsController extends AbstractController
 {
     /**
-     * @Route("/job", name="project_index", methods={"GET"})
+     * @Route("/job", name="job_index", methods={"GET"})
+     * @OA\Get(
+     *     path="/api/job",
+     *     @OA\Response(response="200", description="Get list of all job posts.")
+     * )
      */
     public function index(ManagerRegistry $doctrine): Response
     {
@@ -43,9 +51,34 @@ class JobsController extends AbstractController
         return $this->json($data);
     }
 
-
     /**
      * @Route("/job", name="job_new", methods={"POST"})
+     * @OA\Post(
+     *     path="/api/job",
+     *     @OA\Response(response="200", description="Post new job"),
+     *     @OA\Parameter(ref="#/components/parameters/category"),
+     *     @OA\Parameter(ref="#/components/parameters/technology")
+     * )
+     * @OA\Parameter(
+     *   parameter="category",
+     *   name="category",
+     *   description="category of post like programowanie, grafika, wsparcie",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     * @OA\Parameter(
+     *   parameter="technology",
+     *   name="technology",
+     *   description="category of post like programowanie, grafika, wsparcie",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
      */
     public function new(ManagerRegistry $doctrine, Request $request): Response
     {
@@ -69,6 +102,11 @@ class JobsController extends AbstractController
 
     /**
      * @Route("/job/{id}", name="job_show", methods={"GET"})
+     * @OA\Get(
+     *     path="/api/job{id)",
+     *     @OA\Response(response="200", description="Show perticular job post by its id."),
+     *     @OA\Parameter(ref="#/components/parameters/id")
+     * )
      */
     public function show(ManagerRegistry $doctrine, int $id): Response
     {
@@ -96,6 +134,13 @@ class JobsController extends AbstractController
 
     /**
      * @Route("/job/{id}", name="job_edit", methods={"PUT"})
+     * @OA\Put(
+     *     path="/api/job",
+     *     @OA\Response(response="200", description="Edit articular job post by its id."),
+     *     @OA\Parameter(ref="#/components/parameters/category"),
+     *     @OA\Parameter(ref="#/components/parameters/technology")
+     * )
+     * )
      */
     public function edit(ManagerRegistry $doctrine, Request $request, int $id): Response
     {
@@ -134,6 +179,21 @@ class JobsController extends AbstractController
 
     /**
      * @Route("/job/{id}", name="job_delete", methods={"DELETE"})
+     * @OA\Delete(
+     *     path="/api/job",
+     *     @OA\Response(response="200", description="Delete of particular job post by its id."),
+     *     @OA\Parameter(ref="#/components/parameters/id")
+     * )
+     * @OA\Parameter(
+     *   parameter="id",
+     *   name="id",
+     *   description="id of post",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
      */
     public function delete(ManagerRegistry $doctrine, int $id): Response
     {
