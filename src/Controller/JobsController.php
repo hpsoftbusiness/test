@@ -57,7 +57,13 @@ class JobsController extends AbstractController
      *     path="/api/job",
      *     @OA\Response(response="200", description="Post new job"),
      *     @OA\Parameter(ref="#/components/parameters/category"),
-     *     @OA\Parameter(ref="#/components/parameters/technology")
+     *     @OA\Parameter(ref="#/components/parameters/technology"),
+     *     @OA\Parameter(ref="#/components/parameters/price"),
+     *     @OA\Parameter(ref="#/components/parameters/skills"),
+     *     @OA\Parameter(ref="#/components/parameters/scope"),
+     *     @OA\Parameter(ref="#/components/parameters/location"),
+     *     @OA\Parameter(ref="#/components/parameters/reservation"),
+     *     @OA\Parameter(ref="#/components/parameters/executionTime")
      * )
      * @OA\Parameter(
      *   parameter="category",
@@ -72,9 +78,69 @@ class JobsController extends AbstractController
      * @OA\Parameter(
      *   parameter="technology",
      *   name="technology",
-     *   description="category of post like programowanie, grafika, wsparcie",
+     *   description="technology of work like php",
      *   @OA\Schema(
      *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     * @OA\Parameter(
+     *   parameter="price",
+     *   name="price",
+     *   description="overall price of task ex 400",
+     *   @OA\Schema(
+     *     type="int"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     * @OA\Parameter(
+     *   parameter="skills",
+     *   name="skills",
+     *   description="skills needed in task like laravel",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     * @OA\Parameter(
+     *   parameter="scope",
+     *   name="scope",
+     *   description="overall scope of work",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     *  @OA\Parameter(
+     *   parameter="location",
+     *   name="location",
+     *   description="location like warszawa",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     * @OA\Parameter(
+     *   parameter="executionTime",
+     *   name="executionTime",
+     *   description="time needed to performed task",
+     *   @OA\Schema(
+     *     type="string"
+     *   ),
+     *   in="query",
+     *   required=true
+     * )
+     * @OA\Parameter(
+     *   parameter="reservation",
+     *   name="reservation",
+     *   description="reservation in advance",
+     *   @OA\Schema(
+     *     type="int"
      *   ),
      *   in="query",
      *   required=true
@@ -138,7 +204,13 @@ class JobsController extends AbstractController
      *     path="/api/job",
      *     @OA\Response(response="200", description="Edit articular job post by its id."),
      *     @OA\Parameter(ref="#/components/parameters/category"),
-     *     @OA\Parameter(ref="#/components/parameters/technology")
+     *     @OA\Parameter(ref="#/components/parameters/technology"),
+     *     @OA\Parameter(ref="#/components/parameters/price"),
+     *     @OA\Parameter(ref="#/components/parameters/skills"),
+     *     @OA\Parameter(ref="#/components/parameters/scope"),
+     *     @OA\Parameter(ref="#/components/parameters/location"),
+     *     @OA\Parameter(ref="#/components/parameters/reservation"),
+     *     @OA\Parameter(ref="#/components/parameters/executionTime")
      * )
      * )
      */
@@ -189,7 +261,7 @@ class JobsController extends AbstractController
      *   name="id",
      *   description="id of post",
      *   @OA\Schema(
-     *     type="string"
+     *     type="int"
      *   ),
      *   in="query",
      *   required=true
