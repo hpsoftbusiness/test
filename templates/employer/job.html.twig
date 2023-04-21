@@ -150,7 +150,10 @@
             });
 
             $('#price').change(function () {
-
+                    let before = $('#price').val();
+                    let procent = 0.10;
+                    let after = parseInt(before) * procent;
+                    $('#nuke-price').val(after);
                 if ($('#price').val().length === 0)
                 {
                     $('#price').css('border-color', 'red');
@@ -275,22 +278,22 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Potwierdź stworzenie zlecenia</h5>
+                <h5 class="modal-title">Potwierdź zamieszczenie ogłoszenia.</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <p>*Klikając akceptuj zadanie potwierdzam, że:<br>- posiadam odpowiednią kwote do zapłacenia za
-                        zlecenie <br> - akceptuje ryzyko projektowe.</p>
+                    <p>*Klikając zamieść ogłoszenie  potwierdzam, że:<br>- posiadam odpowiednią kwote do zapłacenia za
+                        zlecenie <br> - akceptuje ryzyko związane z wykonaniem pracy.</p>
                 </div>
 
             </div>
             <div class="modal-footer">
                 <input type="hidden" value="{{ app.request.get('id') }}" id="postId">
-                <button type="button" class="btn btn-danger" id="acceptOffer">Stwórz zlecenie</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="acceptOffer">zamieść ogłoszenie</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">wycofaj sie</button>
             </div>
         </div>
     </div>
@@ -341,7 +344,7 @@
                 </div><!--/ Logo end -->
 
             </div><!--/ Row end -->
-            <h2 style="color:white;">Zleć prace.</h2>
+            <h2 style="color:white;">Opisz dokładnie z czym masz problem.</h2>
 
 
             <span class="fa fa-star" style="color: black;"></span>
@@ -421,45 +424,46 @@
                 <div class="col-md-4 mb-3">
 
                     <div class="input-group">
-                        <label for="cars">Kategoria:</label>
+                        <label for="cars">Kategoria problemu:</label>
                         <div class="input-group">
 
                             <select class="form-select" style="color:white; background-color: black" name="category">
-                                <option value="programowanie">programowanie</option>
-                                <option value="grafika">grafika</option>
-                                <option value="sprzet">sprzet</option>
-                                <option value="wsparcie">wsparcie</option>
+                                <option value="programowanie">programowanie aplikacji</option>
+                                <option value="grafika">grafika albo wygląd aplikacji</option>
+                                <option value="sprzet">sprzet komputerowy i sieciowy</option>
+                                <option value="wsparcie">oprogramowanie komputerowe</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Technologia</label>
+                    <label for="validationServerUsername">Technologia (jeśli znasz - na przykład windows, java, photoshop)</label>
                     <div class="input-group">
                         <input type="text"  style="color: white;" size="50"class="form-control" name="technology" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Cena w PLN</label>
+                    <label for="validationServerUsername">Ile chcesz zapłacić za rozwiązanie problemu w złotówkach:</label>
                     <div class="input-group">
-                        <input type="text"   style="color: white;"  size="50" style="color: grey;" class="form-control" name="price" placeholder="" aria-describedby="inputGroupPrepend3" required>
+                        <input type="text"   style="color: white;"  size="30" style="color: grey;" class="form-control" id="price" name="price" placeholder="" aria-describedby="inputGroupPrepend3" required>
+                        opłata dla itnuke 10 % w złotówkach<input type="text"   style="color: white;"  size="50" style="color: grey;" class="form-control" id="nuke-price" name="nuke-price" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Szacowany czas</label>
+                    <label for="validationServerUsername">Ile czasu według Ciebie zajmie problem:</label>
                     <div class="input-group">
                         <input type="text"   size="50" style="color: white;" class="form-control" name="time" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Zakres</label>
+                    <label for="validationServerUsername">Zakres pracy w skrócie np naprawa komputera, stworzenie wizytówki:</label>
                     <div class="input-group">
                         <input type="text"  size="50"   style="color: white;" class="form-control" name="scope" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Wymagane umiejętnośći</label>
+                    <label for="validationServerUsername">Wymagane umiejętnośći eksperta do rozwiązania problemu (jeśli wiesz)</label>
                     <div class="input-group">
                         <input type="text"  size="50"  style="color: white;" class="form-control is-invalid" name="skills" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
@@ -469,27 +473,27 @@
                 <div class="col-md-4 mb-3">
 
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Lokalizacja</label>
+                        <label for="exampleFormControlInput1">Gdzie ma być wykonana praca:</label>
                         <input type="text" size="50" class="form-control"  style="color: white;" name="location" id="location"  placeholder="">
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
 
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Imię i Nazwisko</label>
+                        <label for="exampleFormControlInput1">Twoje imię i nazwisko:</label>
                         <input type="text" size="50" class="form-control"  style="color: white;" name="name" id="name"  placeholder="">
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-3">
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Adres email</label>
+                        <label for="exampleFormControlInput1">Twój adres email:</label>
                         <input type="text" size="50" class="form-control"  style="color: white;" id="email" name="email" placeholder="">
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Telefon razem z prefiksem kraju (np. 48603203021)</label>
+                        <label for="exampleFormControlInput1">Twój telefon razem z prefiksem kraju (np. 48603203021)</label>
                         <input type="number"  style="color: white;"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"  class="form-control" id="phone" style="color: grey;" name="phone" placeholder="">
 
                     </div>
@@ -498,17 +502,17 @@
 
 
                 <div class="form-group mb-5">
-                <label for="exampleFormControlTextarea1" class="">Opis zadania</label>
+                <label for="exampleFormControlTextarea1" class="">Dokładny opis problemu, czego potrzebujesz (pisz jak najwięcej):</label>
                 <textarea  style="color: white;" class="form-control rounded-0" id="description" name="description" rows="50"></textarea>
             </div>
 
             <div class="form-group mb-5">
-                <label for="myfile">Dodaj zalącznik:</label>
+                <label for="myfile">Dodaj zalącznik z opisem (pdf lub doc):</label>
                 <input type="file" name="uploadedFile" id="fileToUpload">
             </div>
 
-            <a href="http://itnuke.pl"><button class="btn btn-light">back</button></a>
-            <button class="btn btn-danger" data-toggle="modal" id="create" data-target="#confirmModal">stworz</button>
+            <a href="http://itnuke.pl"><button class="btn btn-light">wróc na strone główną</button></a>
+            <button class="btn btn-danger" data-toggle="modal" id="create" data-target="#confirmModal">stwórz zlecenie na problem</button>
 
             </form>
             <br>

@@ -211,13 +211,13 @@
 
 
                     <div class="form-group">
-                        <p>*Klikając akceptuj zadanie potwierdzam, że:<br>- posiadam odpowiednie kwalifikacje do wykonania zadania <br> -  otrzymam pieniądze w przypadku dowiezienia terminu oraz jakości zadania.</p>
+                        <p>*Klikając akceptuj potwierdzam, że:<br>- posiadam odpowiednie kwalifikacje do wykonania zadania <br> -  otrzymam pieniądze w przypadku dowiezienia terminu oraz jakości zadania.</p>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <input type="hidden" value="{{ app.request.get('id') }}" id="postId">
-                <button type="button" class="btn btn-danger" id="acceptOffer" >Przyjmuje zlecenie</button>
+                <button type="button" class="btn btn-danger" id="acceptOffer" >Podejmuje się</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
@@ -371,9 +371,9 @@
 
 
                     <a href="javascript:history.back()">
-                        <button class="btn btn-light">back</button>
+                        <button class="btn btn-light">wróć na strone główną</button>
                     </a>
-                    <button class="btn btn-danger" data-toggle="modal" data-target="#confirmModal">start</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#confirmModal">podejmij sie pracy</button>
         </div>
     </section><!--/ Service box end -->
 

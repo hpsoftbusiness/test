@@ -15,27 +15,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class EmployerController extends AbstractController
 {
-
-    public function trial(UserRepository $user)
-    {
-        if (!$user->canAccess()) {
-            return $this->render('employer/buy.html.twig');
-        }
-        else {
-            $user->create();
-            $user->decreaseLimit();
-            return $this->render('employer/trial.html.twig');
-        }
-    }
-
     public function job(UserRepository $user): Response
     {
-        if ($user->hasLimit()) {
-            $user->decreaseLimit();
-            return $this->render('employer/job.html.twig');
-        }
-
-        return $this->render('employer/buy.html.twig');
+        return $this->render('employer/job.html.twig');
     }
 
     /**
