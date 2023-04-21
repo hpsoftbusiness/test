@@ -2,3 +2,4 @@
 /var/log/
 /var/log/dev.log
 .env
+/vendor/
