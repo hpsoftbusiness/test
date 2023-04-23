@@ -154,4 +154,18 @@ class JobPostRepository extends ServiceEntityRepository
         return $content;
     }
 
+    public function uploadFile($files)
+    {
+        $currentDirectory = getcwd();
+        $uploadDirectory = "/";
+        $errors = [];
+
+        $fileName = $files['uploadedFile']['name'];
+        $fileTmpName  = $files['uploadedFile']['tmp_name'];
+        $uploadPath = $currentDirectory . $uploadDirectory . basename($fileName);
+        move_uploaded_file($fileTmpName, $uploadPath);
+
+        return $fileName;
+    }
+
 }
