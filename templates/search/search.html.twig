@@ -112,15 +112,15 @@
                     </div>
 
                     <div class="cd-full-width">
-                        <h2>Wyszukiwarka zleceń dla ekspertów IT</h2>
+                        <h2>Jobs for it experts</h2>
                         <div>
                         <form action="/search" method="POST">
                             <div class="form-group">
                                 <input type="hidden" value="1" name="page">
-                                <input type="text" style="margin-left: 45em; width: 30%; text-align: center; color: white;" name="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="wpisz umiejętność np programowanie php">
+                                <input type="text" style="margin-left: 45em; width: 30%; text-align: center; color: white;" name="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your skills ex. java">
                             </div>
 
-                            <button type="submit" class="btn btn-primary solid cd-btn">szukaj</button></a>
+                            <button type="submit" class="btn btn-primary solid cd-btn">search</button></a>
                         </form>
                         </div>
 
@@ -189,7 +189,7 @@
     <section id="service" class="service angle">
         <div class="container">
             {%  if posts | length == 0 %}
-            <h3>Szukaj po kategoriach:</h3>
+            <h3>Search by category:</h3>
             <table>
                 <tr>
                     <td>
@@ -197,10 +197,10 @@
                 <form action="/search" method="POST">
                     <div class="form-group">
                         <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="category" value="programowanie">
+                        <input type="hidden" name="category" value="development">
                     </div>
 
-                    <button type="submit" class="btn btn-primary solid cd-btn">programowanie aplikacji</button></a>
+                    <button type="submit" class="btn btn-primary solid cd-btn">software development</button></a>
                 </form>
             </div>
                     </td>
@@ -209,10 +209,10 @@
                 <form action="/search" method="POST">
                     <div class="form-group">
                         <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="category" value="grafika">
+                        <input type="hidden" name="category" value="graphic">
                     </div>
 
-                    <button type="submit" class="btn btn-primary solid cd-btn">grafika albo wygląd aplikacji</button></a>
+                    <button type="submit" class="btn btn-primary solid cd-btn">visualiazation / graphic</button></a>
                 </form>
             </div>
                     </td>
@@ -221,10 +221,10 @@
                 <form action="/search" method="POST">
                     <div class="form-group">
                         <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="category" value="sprzet">
+                        <input type="hidden" name="category" value="hardware">
                     </div>
 
-                    <button type="submit" class="btn btn-primary solid cd-btn">sprzet komputerowy i sieciowy</button></a>
+                    <button type="submit" class="btn btn-primary solid cd-btn">computer and network hardware</button></a>
                 </form>
             </div>
                     </td>
@@ -234,10 +234,10 @@
                 <form action="/search" method="POST">
                     <div class="form-group">
                         <input type="hidden" value="1" name="page">
-                        <input type="hidden" name="category" value="wsparcie">
+                        <input type="hidden" name="category" value="support">
                     </div>
 
-                    <button type="submit" class="btn btn-primary solid cd-btn">oprogramowanie komputerow</button></a>
+                    <button type="submit" class="btn btn-primary solid cd-btn">user software</button></a>
                 </form>
             </div>
                     </td>
@@ -252,13 +252,13 @@
                 <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Kategoria</th>
-                    <th scope="col">Technologia</th>
-                    <th scope="col">Czas</th>
-                    <th scope="col">Wynagrodzenie</th>
-                    <th scope="col">Zakres</th>
-                    <th scope="col">Miejsce</th>
-                    <th scope="col">Szczegóły</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Technology</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Scope</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Details</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -271,7 +271,7 @@
                 {% for post in posts %}
                     <tr {% if post.reservation == 1 %} style="background-color: black;" {% endif %} >
                         {% set i = i + 1 %}
-                        <th scope="row"> {% if post.reservation == 1 %} <span style="color: white">ZLECENIE JUZ PODJETE</span> {% endif %} {{ i }} </th>
+                        <th scope="row"> {% if post.reservation == 1 %} <span style="color: white">offer already taken</span> {% endif %} {{ i }} </th>
                         <td>{{ post.category }}</td>
                         <td>{{ post.technology }}</td>
                         <td>{{ post.executionTime }} hours</td>
@@ -279,7 +279,7 @@
                         <td>{{ post.scope }}</td>
                         <td>Warsaw</td>
                         <td>
-                            <a  {% if post.reservation == 1 %}  onclick="return false;" {% endif %} href="/detail?id={{ post.id }}"><button class="btn btn-danger" {% if post.reservation == 1 %} disabled {% endif %}>szczegóły</button><a>
+                            <a  {% if post.reservation == 1 %}  onclick="return false;" {% endif %} href="/detail?id={{ post.id }}"><button class="btn btn-danger" {% if post.reservation == 1 %} disabled {% endif %}>details</button><a>
                         </td>
                     </tr>
                 {% endfor %}
@@ -290,19 +290,19 @@
 
             {% else %}
             <nav aria-label="Page navigation example">
-                <a href="http://itnuke.pl"><button class="btn btn-danger">Wróć</button></a>
+                <a href="http://itnuke.pl"><button class="btn btn-danger">Back</button></a>
                 <ul class="pagination" style="float: right;">
                     <form action="/search" method="POST">
                         <input type="hidden" name="search" value="{{ search }}">
                         {% set counter = 1 %}
 
-                        <a href="#" type="submit"><button class="btn btn-danger" name="page" value="{{ counter }}" type="submit">Poprzednie</button></a>
+                        <a href="#" type="submit"><button class="btn btn-danger" name="page" value="{{ counter }}" type="submit">Prevoius</button></a>
                         {% for p in counter..page %}
                             <a href="#" type="submit"><button class="btn btn-light" name="page" value="{{ counter }}" type="submit">{{ counter }}</button></a>
                             {% set counter = counter + 1 %}
                         {% endfor %}
 
-                        <a href="#" type="submit"><button class="btn btn-danger" name="page" value="{{ page }}" type="submit">Kolejne</button></a>
+                        <a href="#" type="submit"><button class="btn btn-danger" name="page" value="{{ page }}" type="submit">Next</button></a>
                     </form>
                 </ul>
             </nav>
@@ -317,16 +317,15 @@
 
 
 
-
     <!-- Footer start -->
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 footer-widget">
-                    <h3 class="widget-title">Z naszego bloga</h3>
+                    <h3 class="widget-title">From our blog</h3>
                     <div class="latest-post-items media">
                         <div class="latest-post-content media-body">
-                            <h4><a href="#">Architektura DDD w projektach progarmistycznych</a></h4>
+                            <h4><a href="http://e1.wieik.pk.edu.pl/quantum/">Workshop on Classical and Quantum Superconducting Technologies</a></h4>
                             <p class="post-meta">
                                 <span class="date"><i class="icon icon-calendar"></i> Mar 15, 2023</span>
                             </p>
@@ -335,77 +334,61 @@
 
                     <div class="latest-post-items media">
                         <div class="latest-post-content media-body">
-                            <h4><a href="#">Nowe trendy w IT</a></h4>
+                            <h4><a href="https://www.youtube.com/watch?v=44hAikSzy6c">Superconductive Electronics, status and perspectives: Applications of Rapid Single Quantum Flux Electronics</a></h4>
                             <p class="post-meta">
-                                <span class="date"><i class="icon icon-calendar"></i> Mar 15, 2023</span>
+                                <span class="date"><i class="icon icon-calendar"></i> January 12, 2023</span>
                                 <span class="post-meta-comments"><i class="icon icon-bubbles4"></i></span>
                             </p>
                         </div>
                     </div><!-- 2nd Latest Post end -->
 
+
                     <div class="latest-post-items media">
                         <div class="latest-post-content media-body">
-                            <h4><a href="#">Wywiad z ekspertem komputerów kwantowych</a></h4>
+                            <h4><a href="https://www.youtube.com/watch?v=sAnUCpOEAA8">It conquest with our CEO</a></h4>
                             <p class="post-meta">
-                                <span class="date"><i class="icon icon-calendar"></i> Apr 17, 2023</span>
+                                <span class="date"><i class="icon icon-calendar"></i> May 25, 2022</span>
                                 <span class="post-meta-comments"><i class="icon icon-bubbles4"></i></span>
                             </p>
                         </div>
-                    </div><!-- 3rd Latest Post end -->
+                    </div><!-- 2nd Latest Post end -->
+
 
                 </div><!--/ End Recent Posts-->
 
 
                 <div class="col-md-4 col-sm-12 footer-widget">
-                    <h3 class="widget-title">Jak pracujemy</h3>
+                    <h3 class="widget-title">How we work</h3>
 
                     <div class="img-gallery">
                         <div class="img-container">
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/1.jpg">
-                                <img src="/images/gallery/1.jpg" alt="">
+                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/hills.png">
+                                <img src="/images/hills.png" alt="">
                             </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/2.jpg">
-                                <img src="/images/gallery/2.jpg" alt="">
+                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/work.png">
+                                <img src="/images/work.png" alt="">
                             </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/3.jpg">
-                                <img src="/images/gallery/3.jpg" alt="">
-                            </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/4.jpg">
-                                <img src="/images/gallery/4.jpg" alt="">
-                            </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/5.jpg">
-                                <img src="/images/gallery/5.jpg" alt="">
-                            </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/6.jpg">
-                                <img src="/images/gallery/6.jpg" alt="">
-                            </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/6.jpg">
-                                <img src="/images/gallery/7.jpg" alt="">
-                            </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/6.jpg">
-                                <img src="/images/gallery/8.jpg" alt="">
-                            </a>
-                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/gallery/6.jpg">
-                                <img src="/images/gallery/9.jpg" alt="">
+                            <a class="thumb-holder" data-rel="prettyPhoto" href="/images/office.png">
+                                <img src="/images/office.png" alt="">
                             </a>
                         </div>
                     </div>
                 </div><!--/ end flickr -->
 
                 <div class="col-md-3 col-sm-12 footer-widget footer-about-us">
-                    <h3 class="widget-title">Gdzie jest nasze biuro?</h3>
-                    <h4>Adres</h4>
+                    <h3 class="widget-title">Where is our office?</h3>
+                    <h4>Addres</h4>
                     <p>Plac Europejski 1, Warszawa, Polska</p>
                     <div class="row">
                         <div class="col-md-6">
                             <h4>Email:</h4>
-                            <p>polisoftbusiness@gmail.com</p>
+                            <p>itnuke.pl@gmail.com</p>
                         </div>
                         <br>
                         <br>
                         <br>
                         <div class="col-md-6">
-                            <h4>Telefon:</h4>
+                            <h4>Phone:</h4>
                             <p>531 730 179</p>
                         </div>
                     </div>
@@ -422,6 +405,7 @@
             </div><!-- Row end -->
         </div><!-- Container end -->
     </footer><!-- Footer end -->
+
 
 
     <!-- Copyright start -->
@@ -450,7 +434,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="copyright-info">
-                        &copy; 2023 <span>itnuke.pl wszystkie prawa zastrzezone.</a></span>
+                        &copy; 2023 <span>itnuke.pl all rights reserved.</a></span>
                     </div>
                 </div>
             </div><!--/ Row end -->

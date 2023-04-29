@@ -243,7 +243,7 @@
             </div>
             <div class="modal-body">
                 <div class="alert alert-success" role="alert">
-                    Zlecenie opublikowane. Potwierdzenie wysłane na Twój adres e-mail.
+                    Advertisment has been published. Confirmation was sent to your e-mail.
                 </div>
             </div>
         </div>
@@ -278,22 +278,22 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Potwierdź zamieszczenie ogłoszenia.</h5>
+                <h5 class="modal-title">Confirm job publication.</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
                 </button>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <p>*Klikając zamieść ogłoszenie  potwierdzam, że:<br>- posiadam odpowiednią kwote do zapłacenia za
-                        zlecenie <br> - akceptuje ryzyko związane z wykonaniem pracy.</p>
+                    <p>*Clicking create I confirm that:<br>- I have money for paying for the job
+                        <br> - I accept the project risk.</p>
                 </div>
 
             </div>
             <div class="modal-footer">
                 <input type="hidden" value="{{ app.request.get('id') }}" id="postId">
-                <button type="button" class="btn btn-danger" id="acceptOffer">zamieść ogłoszenie</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">wycofaj sie</button>
+                <button type="button" class="btn btn-danger" id="acceptOffer">create</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">back</button>
             </div>
         </div>
     </div>
@@ -344,7 +344,7 @@
                 </div><!--/ Logo end -->
 
             </div><!--/ Row end -->
-            <h2 style="color:white;">Opisz dokładnie z czym masz problem.</h2>
+            <h2 style="color:white;">Describe your problem.</h2>
 
 
             <span class="fa fa-star" style="color: black;"></span>
@@ -424,46 +424,46 @@
                 <div class="col-md-4 mb-3">
 
                     <div class="input-group">
-                        <label for="cars">Kategoria problemu:</label>
+                        <label for="cars">Category:</label>
                         <div class="input-group">
 
                             <select class="form-select" style="color:white; background-color: black" name="category">
-                                <option value="programowanie">programowanie aplikacji</option>
-                                <option value="grafika">grafika albo wygląd aplikacji</option>
-                                <option value="sprzet">sprzet komputerowy i sieciowy</option>
-                                <option value="wsparcie">oprogramowanie komputerowe</option>
+                                <option value="development">software development</option>
+                                <option value="graphic">graphic or interface</option>
+                                <option value="hardware">hardware</option>
+                                <option value="support">software</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Technologia (jeśli znasz - na przykład windows, java, photoshop)</label>
+                    <label for="validationServerUsername">Technology:</label>
                     <div class="input-group">
                         <input type="text"  style="color: white;" size="50"class="form-control" name="technology" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Ile chcesz zapłacić za rozwiązanie problemu w złotówkach:</label>
+                    <label for="validationServerUsername">How much you want to pay for the problem in PLN:</label>
                     <div class="input-group">
                         <input type="text"   style="color: white;"  size="30" style="color: grey;" class="form-control" id="price" name="price" placeholder="" aria-describedby="inputGroupPrepend3" required>
-                        opłata dla itnuke 10 % w złotówkach<input type="text"   style="color: white;"  size="50" style="color: grey;" class="form-control" id="nuke-price" name="nuke-price" placeholder="" aria-describedby="inputGroupPrepend3" required>
+                        itnuke 10 % commision in PLN<input type="text"   style="color: white;"  size="50" style="color: grey;" class="form-control" id="nuke-price" name="nuke-price" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Ile czasu według Ciebie zajmie problem:</label>
+                    <label for="validationServerUsername">Your time estimation:</label>
                     <div class="input-group">
                         <input type="text"   size="50" style="color: white;" class="form-control" name="time" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Zakres pracy w skrócie np naprawa komputera, stworzenie wizytówki:</label>
+                    <label for="validationServerUsername">Work scope:</label>
                     <div class="input-group">
                         <input type="text"  size="50"   style="color: white;" class="form-control" name="scope" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <label for="validationServerUsername">Wymagane umiejętnośći eksperta do rozwiązania problemu (jeśli wiesz)</label>
+                    <label for="validationServerUsername">Required skills:</label>
                     <div class="input-group">
                         <input type="text"  size="50"  style="color: white;" class="form-control is-invalid" name="skills" placeholder="" aria-describedby="inputGroupPrepend3" required>
                     </div>
@@ -473,27 +473,27 @@
                 <div class="col-md-4 mb-3">
 
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Gdzie ma być wykonana praca:</label>
+                        <label for="exampleFormControlInput1">Location:</label>
                         <input type="text" size="50" class="form-control"  style="color: white;" name="location" id="location"  placeholder="">
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
 
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Twoje imię i nazwisko:</label>
+                        <label for="exampleFormControlInput1">Your name and surname:</label>
                         <input type="text" size="50" class="form-control"  style="color: white;" name="name" id="name"  placeholder="">
                     </div>
                 </div>
 
                 <div class="col-md-4 mb-3">
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Twój adres email:</label>
+                        <label for="exampleFormControlInput1">Your email:</label>
                         <input type="text" size="50" class="form-control"  style="color: white;" id="email" name="email" placeholder="">
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="input-group">
-                        <label for="exampleFormControlInput1">Twój telefon razem z prefiksem kraju (np. 48603203021)</label>
+                        <label for="exampleFormControlInput1">Your phone with country prefix (ex. 48603203021):</label>
                         <input type="number"  style="color: white;"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"  class="form-control" id="phone" style="color: grey;" name="phone" placeholder="">
 
                     </div>
@@ -502,17 +502,17 @@
 
 
                 <div class="form-group mb-5">
-                <label for="exampleFormControlTextarea1" class="">Dokładny opis problemu, czego potrzebujesz (pisz jak najwięcej):</label>
+                <label for="exampleFormControlTextarea1" class="">Your problem description, write as much as you can in details:</label>
                 <textarea  style="color: white;" class="form-control rounded-0" id="description" name="description" rows="50"></textarea>
             </div>
 
             <div class="form-group mb-5">
-                <label for="myfile">Dodaj zalącznik z opisem (pdf lub doc):</label>
+                <label for="myfile">Add attachement with description (pdf or doc):</label>
                 <input type="file" name="uploadedFile" id="fileToUpload">
             </div>
 
-            <a href="http://itnuke.pl"><button class="btn btn-light">wróc na strone główną</button></a>
-            <button class="btn btn-danger" data-toggle="modal" id="create" data-target="#confirmModal">stwórz zlecenie na problem</button>
+            <a href="http://itnuke.pl"><button class="btn btn-light">back on main page</button></a>
+            <button class="btn btn-danger" data-toggle="modal" id="create" data-target="#confirmModal">create advertisment</button>
 
             </form>
             <br>
@@ -552,7 +552,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="copyright-info">
-                    &copy; 2023 <span>itnuke.pl wszystkie prawa zastrzezone.</a></span>
+                    &copy; 2023 <span>itnuke.pl all rights reserved.</a></span>
                 </div>
             </div>
         </div><!--/ Row end -->

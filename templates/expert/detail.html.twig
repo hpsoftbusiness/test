@@ -187,7 +187,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Potwierdź przyjęcie zlecenia</h5>
+                <h5 class="modal-title">Confirm job start</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -195,15 +195,15 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Imię i Nazwisko</label>
+                        <label for="exampleFormControlInput1">Name and Surname</label>
                         <input type="text" class="form-control" style="color: grey;" id="name" placeholder="">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Adres email</label>
+                        <label for="exampleFormControlInput1">Email</label>
                         <input type="text" class="form-control"  style="color: grey;"  id="email" placeholder="">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Telefon razem z prefiksem kraju (np. 48603203021)</label>
+                        <label for="exampleFormControlInput1">Phone with country prefix (ex. 48603203021)</label>
                         <input type="number"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control"  style="color: grey;" id="phone" placeholder="">
                     </div>
 
@@ -211,13 +211,13 @@
 
 
                     <div class="form-group">
-                        <p>*Klikając akceptuj potwierdzam, że:<br>- posiadam odpowiednie kwalifikacje do wykonania zadania <br> -  otrzymam pieniądze w przypadku dowiezienia terminu oraz jakości zadania.</p>
+                        <p>*Clicking accept I confirm that:<br>- i have neccessery qualification to perform the job<br> -  I will receive money every month or after job execution when it will last sooner than month.</p>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <input type="hidden" value="{{ app.request.get('id') }}" id="postId">
-                <button type="button" class="btn btn-danger" id="acceptOffer" >Podejmuje się</button>
+                <button type="button" class="btn btn-danger" id="acceptOffer" >accept</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
             </div>
         </div>
@@ -269,13 +269,13 @@
                 </div><!--/ Logo end -->
 
             </div><!--/ Row end -->
-            <h4 style="color:white;">Zadanie: {{ post.scope }}</h4>
-            <h4 style="color:white;">Kategoria: {{ post.category }}</h4>
-            <h4 style="color:white;">Technologia: {{ post.technology }}</h4>
-            <h4 style="color: white;">Wymagane umiejętnośći: {{ post.skills }}</h4>
-            <h4 style=" color: white;">Zarobek: {{ post.price }} PLN</h4>
-            <h4 style=" color: white;">Czas: {{ post.ExecutionTime }} godzin</h4>
-            <h4 style=" color: white;"> Ryzyko:
+            <h4 style="color:white;">Task: {{ post.scope }}</h4>
+            <h4 style="color:white;">Category: {{ post.category }}</h4>
+            <h4 style="color:white;">Technology: {{ post.technology }}</h4>
+            <h4 style="color: white;">Required skills: {{ post.skills }}</h4>
+            <h4 style=" color: white;">Price: {{ post.price }} PLN</h4>
+            <h4 style=" color: white;">Time Estimation: {{ post.ExecutionTime }}</h4>
+            <h4 style=" color: white;"> Risk:
                 {% for d in 1..difficulty %}
                     <span class="fa fa-star checked" style="color: red;"></span>
                 {% endfor %}
@@ -371,9 +371,9 @@
 
 
                     <a href="javascript:history.back()">
-                        <button class="btn btn-light">wróć na strone główną</button>
+                        <button class="btn btn-light">back on main page</button>
                     </a>
-                    <button class="btn btn-danger" data-toggle="modal" data-target="#confirmModal">podejmij sie pracy</button>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#confirmModal">take the challenge</button>
         </div>
     </section><!--/ Service box end -->
 
@@ -406,7 +406,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="copyright-info">
-                        &copy; 2023 <span>itnuke.pl wszystkie prawa zastrzezone.</a></span>
+                        &copy; 2023 <span>itnuke.pl all rights reserved.</a></span>
                     </div>
                 </div>
             </div><!--/ Row end -->
