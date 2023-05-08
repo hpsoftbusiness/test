@@ -3,3 +3,4 @@
 /var/log/dev.log
 .env
 /vendor/
+/.idea/
